@@ -1,0 +1,304 @@
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <title>WHALE TEACHER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" Content-Type="text/css" href="css/index.css" />
+  <link rel="stylesheet" Content-Type="text/css" href="css/sidenav.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <!-- *********************
+         bootstrap(jeong)
+         date:2018-12-04 
+        *********************-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+  <!-- sweetalert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body id="body">
+
+  <!-- 사이드 네비바 부트스트랩 -->
+  <div id="mySidenav" class="sidenav">
+    <div class="mySidenavLovo"></div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <span class="navMenuSpan"><i class="fa fa-home" style="font-size:29px ;margin-right:8px"></i>Home</span>
+    <span class="navMenuSpan"><i class="fa fa-file-code-o" style="font-size:25px;margin-right:5px ;margin-right:15px"></i>Portfolio</span>
+    <span class="navMenuSpan"><i class="	glyphicon glyphicon-folder-open" style="font-size:20px;margin-right:16px"></i>Works</span>
+    <span class="navMenuSpan"><i class="	glyphicon glyphicon-user" style="font-size:20px;margin-right:16px"></i>Contact</span>
+    <span class="navMenuSpan navMenuBottom">
+      <i class="fa fa-envelope" style="font-size:14px ;margin-right:8px"></i> Email<br />
+      <p>jhs92043@gmail.com</p> <br />
+      <i class="fa fa-phone" style="font-size:14px ;margin-right:8px"></i> Phone<br />
+      <p>+82.10.4112.4823</p> <br />
+      <i class="fa fa-github" style="font-size:14px ;margin-right:8px"></i> github<br />
+      <p>https://github.com/jeonghyunseok</p>
+    </span>
+  </div>
+
+
+  <section id="header">
+
+    <div class="topNav">
+      <div class="overlay" onclick="closeNav()"></div>
+      <!-- nav 메뉴 버튼 -->
+      <div class="bt-menu-trigger" onclick="openNav()">
+        <span></span>
+      </div>
+      <!-- 사이트 로고 -->
+      <div id="siteLogo" class="site-logo">
+        <svg style="width: 40px;height: 40px; margin-left: 20px;margin-top: 12.5px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="310.000000pt" height="310.000000pt" viewBox="0 0 310.000000 310.000000" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+              <stop offset="0%" stop-color="#7A5FFF">
+                <animate attributeName="stop-color" values="#7A5FFF; #01FF89; #7A5FFF" dur="4s" repeatCount="indefinite"></animate>
+              </stop>
+
+              <stop offset="100%" stop-color="#01FF89">
+                <animate attributeName="stop-color" values="#01FF89; #7A5FFF; #01FF89" dur="4s" repeatCount="indefinite"></animate>
+              </stop>
+            </linearGradient>
+          </defs>
+          <g fill="url('#logo-gradient')" transform="translate(0.000000,310.000000) scale(0.100000,-0.100000)" fill="#000000"
+            stroke="none">
+            <path d="M1291 2910 c-283 -58 -510 -179 -712 -380 -192 -190 -319 -420 -380
+            -690 -29 -129 -36 -357 -14 -495 121 -771 847 -1290 1607 -1149 569 105 1016
+            558 1113 1128 19 113 21 313 5 426 -68 479 -384 886 -832 1076 -175 73 -289
+            96 -508 100 -153 3 -201 0 -279 -16z m484 -86 c245 -40 489 -168 675 -354 192
+            -191 306 -399 361 -663 25 -114 34 -406 13 -427 -7 -7 -177 -9 -540 -8 l-529
+            3 1 75 c1 55 7 88 24 123 46 98 108 136 307 188 240 63 322 108 368 203 18 36
+            29 79 33 121 l5 66 -389 -3 c-385 -3 -389 -3 -432 -26 -24 -13 -63 -41 -86
+            -62 l-43 -39 -38 39 c-21 21 -61 49 -89 62 -50 23 -59 23 -428 26 l-378 3 0
+            -54 c0 -96 39 -174 112 -228 50 -35 118 -61 277 -105 158 -44 233 -77 275
+            -124 42 -47 73 -128 77 -205 l4 -60 -542 -3 -543 -2 -6 25 c-3 14 -4 103 -2
+            198 4 142 10 189 31 268 80 302 240 544 476 722 293 221 631 302 1006 241z
+            m-384 -781 c28 -15 65 -47 99 -89 l55 -65 65 70 c103 110 83 106 454 109 189
+            2 323 -1 328 -6 15 -15 -29 -89 -71 -120 -49 -36 -91 -51 -261 -97 -220 -60
+            -295 -107 -355 -224 -50 -99 -51 -258 -4 -402 21 -64 86 -198 136 -278 l27
+            -44 -49 8 c-85 12 -155 45 -201 91 -53 55 -91 59 -117 14 -10 -16 -37 -41 -60
+            -54 -44 -26 -155 -61 -163 -53 -3 3 7 24 21 48 55 86 105 203 126 295 49 213
+            -6 416 -136 502 -53 35 -136 66 -319 118 -80 23 -147 49 -175 68 -49 33 -91
+            87 -91 118 0 18 11 19 323 16 310 -3 324 -4 368 -25z m1292 -761 l127 -2 -6
+            -27 c-14 -58 -63 -195 -94 -262 -31 -67 -34 -69 -74 -75 -22 -3 -79 -7 -126
+            -8 -115 -2 -177 19 -243 83 -28 27 -60 49 -71 49 -12 0 -38 -18 -60 -41 -35
+            -38 -128 -89 -161 -89 -15 0 -88 106 -130 190 -32 63 -76 176 -70 181 3 4 679
+            5 908 1z m-1348 -34 c-22 -109 -153 -338 -192 -338 -48 0 -136 43 -178 86 -52
+            55 -82 58 -119 10 -31 -41 -136 -96 -186 -98 -32 0 -153 15 -223 28 -21 4 -34
+            18 -52 55 -35 67 -59 131 -83 217 l-20 72 530 0 530 0 -7 -32z m-375 -360 c59
+            -40 182 -78 254 -78 113 0 238 39 303 94 l33 27 33 -25 c56 -43 141 -76 226
+            -88 129 -19 275 16 359 87 l31 26 45 -35 c68 -52 163 -80 272 -80 l92 -1 -18
+            -25 c-33 -46 -134 -156 -186 -202 -163 -144 -342 -236 -569 -294 -98 -24 -128
+            -28 -280 -28 -183 -1 -268 11 -418 60 -97 32 -247 108 -335 170 -106 75 -268
+            239 -314 319 -4 6 29 9 93 7 74 -3 112 0 151 13 59 20 130 58 149 81 14 17 9
+            19 79 -28z" />
+          </g>
+        </svg>
+      </div>
+      <!-- 사이트 이름 -->
+      <div class="site-title" class="todo-title linear-wipe" fill="url('#logo-gradient')" transform="translate(0.000000,310.000000) scale(0.100000,-0.100000)"
+        fill="#000000" stroke="none">
+        Jeong's WebSite</div>
+    </div>
+
+    </div>
+
+
+    <!-- 배너 텍스트&& 버튼 -->
+    <div class="bg-text">
+        <div class="overlay" onclick="closeNav()"></div>
+      <div class="bg-text-name">HYUNSEOK</div>
+      <div class="bg-text-detail">Welcome to My Portfolio Site</div>
+      <button class="bg-btn">Portfolio</button>
+      <!-- 스크롤 다운 -->
+      <div class='mouse-container' style="display:none">
+         <div class='mouse'>
+           <span class='scroll-down'></span>
+         </div>
+       </div>
+    </div>
+   
+
+
+
+    </span>
+    </span>
+
+    <!-- 배경 비디오 -->
+    <div class="bg-video ">
+        <div class="overlay" onclick="closeNav()"></div>
+      <div class="video-container">
+        <video autoplay="autoplay" muted="muted" loop="loop" id="webVideo" class="my-video">
+          <source src="main.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+
+      </div>
+    </div>
+    
+    </div>
+    </div>
+  </section>
+
+
+  <!-- 네비바 클릭시 전체 화면 이동 -->
+  <div id="main"></div>
+  <div id="root"></div>
+</body>
+<script src="/bundle.js"></script>
+<!-- 좌측 Navbar 여닫이 -->
+<script>
+
+
+  var filter = "win16|win32|win64|mac";
+  //모바일 확인
+  console.log(navigator.platform)
+  if (navigator.platform) {
+    if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+      console.log("Now Mobile");
+      // 좌측 네비바 열기
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("root").style.marginLeft = "250px";
+        document.getElementById("header").style.marginLeft = "250px";
+        $('.bt-menu-trigger').css("display", "none");
+        $('.navMenuSpan').css("display", "block");
+
+        $('#mySidenav').css("height", document.body.scrollHeight);
+        $('.overlay').css("display", "block");
+        $('.navMenuBottom').css("margin-top", "35%");
+
+
+
+        // 스크롤 금지
+
+        $('.overlay').on('scroll touchmove mousewheel', function (evt) {
+          evt.preventDefault();
+          evt.stopPropagation();
+          return false;
+        });
+        $('#header').on('scroll touchmove mousewheel', function (evt) {
+          evt.preventDefault();
+          evt.stopPropagation();
+          return false;
+        });
+        $('#mySidenav').on('scroll touchmove mousewheel', function (evt) {
+          evt.preventDefault();
+          evt.stopPropagation();
+          return false;
+        });
+
+
+      }
+      // 좌측 네비바 닫기
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("root").style.marginLeft = "0";
+        document.getElementById("header").style.marginLeft = "0";
+        $('.bt-menu-trigger').css("display", "block");
+        $('.navMenuSpan').css("display", "none");
+        $('.overlay').css("display", "none");
+
+
+        // 모바일 스크롤 금지 해제
+        $('.overlay').off('scroll touchmove mousewheel');
+        $('#header').off('scroll touchmove mousewheel');
+        $('#mySidenav').off('scroll touchmove mousewheel');
+
+      }
+
+
+    } else {
+      console.log(" NowPC");
+
+
+      // 좌측 네비바 열기
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("root").style.marginLeft = "250px";
+        document.getElementById("header").style.marginLeft = "250px";
+        $('.bt-menu-trigger').css("display", "none");
+        $('.navMenuSpan').css("display", "block");
+
+
+
+
+      }
+      // 좌측 네비바 닫기
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("root").style.marginLeft = "0";
+        document.getElementById("header").style.marginLeft = "0";
+        $('.bt-menu-trigger').css("display", "block");
+        $('.navMenuSpan').css("display", "none");
+
+
+
+
+
+      }
+    }
+  }
+
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function (event) {
+    // array with texts to type in typewriter
+    var dataText = ["       ", "hyunseok"];
+
+    // type one text in the typwriter
+    // keeps calling itself until the text is finished
+    function typeWriter(text, i, fnCallback) {
+
+
+      // chekc if text isn't finished yet
+      if (i < 9) {
+        // add next character to h1
+        document.querySelector(".bg-text-name").innerHTML = text.substring(0, i + 1);
+
+        // wait for a while and call this function again for next character
+        setTimeout(function () {
+          typeWriter(text, i + 1, fnCallback)
+        }, 100);
+      }
+      // text finished, call callback if there is a callback function
+      else if (typeof fnCallback == 'function') {
+        // call callback after timeout
+        setTimeout(fnCallback, 700);
+      }
+    }
+    // start a typewriter animation for a text in the dataText array
+    function StartTextAnimation(i) {
+      if (typeof dataText[i] == 'undefined') {
+        setTimeout(function () {
+          StartTextAnimation(0);
+        }, 200000);
+      }
+      // check if dataText[i] exists
+      if (i < 2) {
+        // text exists! start typewriter animation
+        typeWriter(dataText[i], 0, function () {
+          // after callback (and whole text has been animated), start next text
+          StartTextAnimation(i + 1);
+        });
+      }
+    }
+    // start the text animation
+    StartTextAnimation(0);
+  });
+
+</script>
+
+</html>

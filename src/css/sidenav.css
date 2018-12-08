@@ -1,0 +1,119 @@
+/* 사이드 네비바 부트스트랩 */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+
+  .navMenuSpan{
+    padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      background-color: transparent;
+      border:1px solid #111111;
+      transition: 0.3s
+  }
+  .navMenuSpan:hover{
+    cursor: pointer;
+    color:#337ab7; 
+  }
+  .navMenuBottom{
+    width: 250px;
+    overflow: hidden;
+    bottom: 0;
+    margin-top: 95%;
+    border-top: 1px solid;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: 0;
+    animation: fadeIn 1s;
+  }
+  .navMenuBottom:hover{
+    cursor: auto;
+    color:#818181;
+  }
+  .navMenuBottom p{
+    font-size: 13px;
+    margin: 5px 0px 0px 18px;
+  }
+
+
+
+
+
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;position: fixed !important;}
+  .sidenav a {font-size: 18px;}
+  .navMenuBottom {
+    margin-top: 60%;
+  }
+  .fixedP{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    position: relative;
+    width: auto;
+    padding-top: 0;
+    background-color: #f1f1f1;
+  }
+  }
+  .toDoAll{
+    background-color: wheat;
+    height: 70%;
+  }
+
+
+  .overlay {
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: 130%;
+    height: 1000px;
+    margin-top: -250px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
