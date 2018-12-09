@@ -1,0 +1,214 @@
+.page-conts{
+
+}
+.page-conts hr{
+  width: 10%;
+  height: 1px;
+ background-color: black;
+ border-top: 0px solid;
+
+}
+.cont-title{
+  text-align: center;
+  padding-top: 48px;
+  font-weight: 700;
+  font-size: 40px;
+
+}
+
+
+
+/* 카테고리 필터 */
+
+.filterDiv {
+  
+ display: none;
+}
+.jumbotron{
+background: none;
+}
+.show {
+  display: block;
+}
+
+.container {
+  /* margin-top: 20px;
+  overflow: hidden; */
+}
+
+.myBtnContainer{
+  padding: 2%;
+  text-align: center;
+}
+
+/* Style the buttons */
+.btn {
+  display: inline-block;
+  margin: 3px;
+    padding: .4em .8em;
+    background: #fff;
+    border: 2px solid #333;
+    font-size: 16px;
+    font-family: 'Nanum gothic', arial, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+  
+}
+
+.btn:hover {
+  background-color:rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+
+}
+
+.btn.active {
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+/* 리스트 배치 */
+
+.width100 {
+  width: "100%";
+}
+
+.col-mgbtm {
+	margin-bottom: "25px";
+}
+
+.font-josefin {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.grey-hd1 {
+  color: "#4a4a4a";
+  font-size: "25px";
+  font-weight: "600";
+}
+
+
+.cat_head {
+	background:" #f4f4f4";
+}
+
+.dots {
+	text-align: "center";
+	margin-bottom: "20px";
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+
+}
+
+@media screen and (max-width: 500px) {
+	.cat_check .col-xs-6 {
+		float: none;
+		width: 100%;
+	}
+}
+
+.about-row{
+  margin-bottom: 50px;
+}
+
+@font-face { font-family: 'Godo'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff'); } @font-face { font-family: 'Godo'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff'); } .godo * { font-family: 'Godo', sans-serif; }
+/* .about-slogan-first{
+  font-size: 19px;
+  margin-top: 3%;
+  margin-left: 2%;
+  font-family: 'Godo';
+  line-height: 2;
+  width: 100%;
+}*/
+.about-slogan-second{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 4%;
+  font-family: 'Godo';
+  display: block !important;
+} 
+.cont-title-about{
+  text-align: center;
+  padding-top: 0px;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 40px;
+}
+.about-cont{
+  text-align: center;
+  float: left;
+  width: 50%;
+
+}
+.about-img{
+  width: 100%;
+  height: 60%;
+
+  margin-left: 2%;
+  background-image: url("../images/about.jpg");
+  background-size: 100% 100%;
+
+}
+
+.about-cont-second{
+  background-color: none;
+}
+.cont-about-hr{
+  display: none;
+}
+
+/* .about-ul{
+  margin-top:30px;
+}
+.about-li{
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 20px;
+  padding: 4px;
+} */
+
+
+/* 모바일 CSS (Jeong)   */
+@media (max-width:760px) {
+.about-cont-first{
+  display: none;
+}
+.about-cont-second{
+  text-align: center;
+ 
+  width: 100%;
+}
+
+.cont-title-about{
+  text-align: center;
+  padding-top: 48px;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 0px;
+
+}
+.cont-about-hr{
+  display: block;
+}
+}
+
+
+
+.about-ul {
+  color: black;
+  font-size: 0;
+  text-align: center;
+}
+.about-li {
+  padding: 7px 15px;
+  margin: 0 16px 16px 0;
+  letter-spacing: 4px;
+  font-size: 18px;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
+}

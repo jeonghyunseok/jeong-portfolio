@@ -48,7 +48,7 @@
       display: block;
       transition: 0.3s;
       background-color: transparent;
-      border:1px solid #111111;
+      border:1px solid #111111; 
       transition: 0.3s
   }
   .navMenuSpan:hover{

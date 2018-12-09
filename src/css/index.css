@@ -15,6 +15,9 @@ body {
  #header{
    transition: 0.5s;
  }
+ #root{
+  transition: 0.5s;
+ }
   /* 배너 텍스트 */
 .bg-text{
   position: absolute;
@@ -198,6 +201,7 @@ ul {
   height: 65px;
   position: fixed;
   z-index: 1000;
+  transition: 0.5s;
  }
 
  .site-title{
@@ -311,7 +315,7 @@ ul {
     height: 100px;
     text-align: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 120px;
     animation: fadeUp 0.8s 2.5s ease-in both;
 
   }
@@ -381,9 +385,3 @@ visibility: hidden;
 
 }
 }
-
-
-
-
-
-

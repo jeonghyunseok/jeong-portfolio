@@ -2,11 +2,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WHALE TEACHER</title>
+  <title>jeonghyunseok Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" Content-Type="text/css" href="css/index.css" />
   <link rel="stylesheet" Content-Type="text/css" href="css/sidenav.css" />
+
   <link rel="shortcut icon" href="images/favicon.ico" />
   <!-- *********************
          bootstrap(jeong)
@@ -23,6 +24,7 @@
   <!-- sweetalert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+
 </head>
 
 <body id="body">
@@ -32,22 +34,19 @@
     <div class="mySidenavLovo"></div>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <span class="navMenuSpan"><i class="fa fa-home" style="font-size:29px ;margin-right:8px"></i>Home</span>
-    <span class="navMenuSpan"><i class="fa fa-file-code-o" style="font-size:25px;margin-right:5px ;margin-right:15px"></i>Portfolio</span>
-    <span class="navMenuSpan"><i class="	glyphicon glyphicon-folder-open" style="font-size:20px;margin-right:16px"></i>Works</span>
+    <span class="navMenuSpan"><i class="	glyphicon glyphicon-folder-open" style="font-size:20px;margin-right:16px"></i>About</span>
+    <span class="navMenuSpan"><i class="fa fa-file-code-o" style="font-size:25px;margin-right:5px ;margin-right:15px"></i>Works</span>
     <span class="navMenuSpan"><i class="	glyphicon glyphicon-user" style="font-size:20px;margin-right:16px"></i>Contact</span>
     <span class="navMenuSpan navMenuBottom">
-      <i class="fa fa-envelope" style="font-size:14px ;margin-right:8px"></i> Email<br />
+      <i class="fa fa-envelope" style="font-size:14px ;margin-right:8px"></i> EMAIL<br />
       <p>jhs92043@gmail.com</p> <br />
-      <i class="fa fa-phone" style="font-size:14px ;margin-right:8px"></i> Phone<br />
+      <i class="fa fa-phone" style="font-size:14px ;margin-right:8px"></i> PHONE<br />
       <p>+82.10.4112.4823</p> <br />
-      <i class="fa fa-github" style="font-size:14px ;margin-right:8px"></i> github<br />
+      <i class="fa fa-github" style="font-size:14px ;margin-right:8px"></i> GITHUB<br />
       <p>https://github.com/jeonghyunseok</p>
     </span>
   </div>
-
-
   <section id="header">
-
     <div class="topNav">
       <div class="overlay" onclick="closeNav()"></div>
       <!-- nav 메뉴 버튼 -->
@@ -110,12 +109,12 @@
         fill="#000000" stroke="none">
         Jeong's WebSite</div>
     </div>
-
     </div>
 
 
+
     <!-- 배너 텍스트&& 버튼 -->
-    <div class="bg-text">
+    <div id="bgText" class="bg-text">
         <div class="overlay" onclick="closeNav()"></div>
       <div class="bg-text-name">HYUNSEOK</div>
       <div class="bg-text-detail">Welcome to My Portfolio Site</div>
@@ -127,31 +126,25 @@
          </div>
        </div>
     </div>
-   
-
-
-
     </span>
     </span>
-
     <!-- 배경 비디오 -->
-    <div class="bg-video ">
+    <div id="bgVideo" class="bg-video ">
         <div class="overlay" onclick="closeNav()"></div>
       <div class="video-container">
         <video autoplay="autoplay" muted="muted" loop="loop" id="webVideo" class="my-video">
           <source src="main.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-
       </div>
     </div>
+
+
     
     </div>
     </div>
   </section>
 
-
-  <!-- 네비바 클릭시 전체 화면 이동 -->
   <div id="main"></div>
   <div id="root"></div>
 </body>
@@ -170,14 +163,16 @@
 
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("root").style.marginLeft = "250px";
-        document.getElementById("header").style.marginLeft = "250px";
+        // document.getElementById("root").style.marginLeft = "250px";
+        // document.getElementById("header").style.marginLeft = "250px";
+        $(".topNav").css("margin-left","250px");
         $('.bt-menu-trigger').css("display", "none");
         $('.navMenuSpan').css("display", "block");
 
         $('#mySidenav').css("height", document.body.scrollHeight);
         $('.overlay').css("display", "block");
         $('.navMenuBottom').css("margin-top", "35%");
+
 
 
 
@@ -198,31 +193,24 @@
           evt.stopPropagation();
           return false;
         });
-
-
       }
       // 좌측 네비바 닫기
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("root").style.marginLeft = "0";
         document.getElementById("header").style.marginLeft = "0";
+        $(".topNav").css("margin-left","0px");
         $('.bt-menu-trigger').css("display", "block");
         $('.navMenuSpan').css("display", "none");
         $('.overlay').css("display", "none");
-
-
         // 모바일 스크롤 금지 해제
         $('.overlay').off('scroll touchmove mousewheel');
         $('#header').off('scroll touchmove mousewheel');
         $('#mySidenav').off('scroll touchmove mousewheel');
 
       }
-
-
     } else {
       console.log(" NowPC");
-
-
       // 좌측 네비바 열기
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -230,10 +218,6 @@
         document.getElementById("header").style.marginLeft = "250px";
         $('.bt-menu-trigger').css("display", "none");
         $('.navMenuSpan').css("display", "block");
-
-
-
-
       }
       // 좌측 네비바 닫기
       function closeNav() {
@@ -242,11 +226,6 @@
         document.getElementById("header").style.marginLeft = "0";
         $('.bt-menu-trigger').css("display", "block");
         $('.navMenuSpan').css("display", "none");
-
-
-
-
-
       }
     }
   }
