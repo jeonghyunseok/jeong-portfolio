@@ -16,8 +16,51 @@ class Main extends React.Component {
     this.filterSelection = this.filterSelection.bind(this);
     this.w3AddClass = this.w3AddClass.bind(this);
     this.w3RemoveClass = this.w3RemoveClass.bind(this);
-
+    this.fnSend = this.fnSend.bind(this);
   }
+// 이메일 보내기
+fnSend(e){
+  let name = this.refs.name.value;
+  let email =this.refs.email.value;
+  let phone = this.refs.phone.value;
+  let message = this.refs.message.value;
+
+  // 입력해 주세요
+  if(name.length ==0 ){
+    swal({ title: '이름을 입력해 주세요', icon: "info" })
+    return false;
+  }
+  else if(email.length ==0 ){
+    swal({ title: '이메일을 입력해 주세요', icon: "info" })
+    return false;
+  } 
+  else if(phone.length ==0 ){
+    swal({ title: '전화번호를 입력해 주세요', icon: "info" })
+    return false;
+  }
+  else if(message.length ==0 ){
+    swal({ title: '메세지를 입력해 주세요', icon: "info" })
+    return false;
+  }
+
+  // 맞는 형식으로 입력해주세요
+  var regEmail =/^[-A-Za-z0-9_]+[-A-Za-z0-9_.]*[@]{1}[-A-Za-z0-9_]+[-A-Za-z0-9_.]*[.]{1}[A-Za-z]{1,5}$/g
+  if(!regEmail.test(email))
+  {
+    swal({ title: '이메을을 알맞은 형식으로 입력해주세요', icon: "info" })
+    return false;
+  }
+  var regNumber = /^[0-9]*$/;
+  if(!regNumber.test(phone))
+  {
+    swal({ title: '전화번호에 숫자만 입력해 주세요', icon: "info" })
+    return false;
+  }
+
+
+  swal({ title: '이메일', icon: "success" })
+  // .then((value) => { })
+}
 
   w3AddClass(element, name) {
     var i, arr1, arr2;
@@ -153,36 +196,38 @@ class Main extends React.Component {
 
       <div class="page-conts">
 
-        <div class="about">
+        <div class="cate-cont about">
           <div class="row about-row">
+            <div class="cont-title-about">ABOUT</div>
+            <hr class="cont-about-hr" />
+
             <div class="col-md-6 about-cont about-cont-first">
               <div class="about-img" />
             </div>
             <div class="col-md-6 about-cont about-cont-second">
-              <div class="cont-title-about">ABOUT</div>
-              <hr class="cont-about-hr" />
+              <div class="cont-title-keyword">KEYWORD</div>
               <div class="about-slogan-second">
                 미래를 예측하는 가장 확실한 방법은, 미래를 만드는 것이라고 생각합니다.
                 <br />더 나은 미래를 만들어 나가는 개발자 정현석 입니다.
             </div>
               <ul class="about-ul">
-                <li class="about-li"  data-aos="zoom-in">DEVELOPER</li>
-                <li class="about-li"  data-aos="zoom-in">PROGRAMMING</li>
+                <li class="about-li" data-aos="zoom-in">DEVELOPER</li>
+                <li class="about-li" data-aos="zoom-in">PROGRAMMING</li>
                 <br />
-                <li class="about-li"  data-aos="zoom-in">1992</li>
-                <li class="about-li"  data-aos="zoom-in">MALE</li>
-                <li class="about-li"  data-aos="zoom-in">GIMPO</li>
+                <li class="about-li" data-aos="zoom-in">1992</li>
+                <li class="about-li" data-aos="zoom-in">MALE</li>
+                <li class="about-li" data-aos="zoom-in">GIMPO</li>
                 <br />
-                <li class="about-li"  data-aos="zoom-in">WEB SERVER</li>
-                <li class="about-li"  data-aos="zoom-in">JavaScript</li>
-                <li class="about-li"  data-aos="zoom-in">ETC</li>
+                <li class="about-li" data-aos="zoom-in">WEB SERVER</li>
+                <li class="about-li" data-aos="zoom-in">JavaScript</li>
+                <li class="about-li" data-aos="zoom-in">ETC</li>
               </ul>
 
             </div>
           </div>
         </div>
-   
-        <div class="works">
+
+        <div class="cate-cont works">
           <div class="cont-title">WORKS</div>
           <hr />
 
@@ -195,10 +240,10 @@ class Main extends React.Component {
           </div>
 
           <div class="container" data-aos='fade-up'>
-        
 
-            <div class="jumbotron cat_head">
-              <div class="row cat_check">
+
+            <div class="jumbotron con_head">
+              <div class="row con_check">
 
 
                 <div class="filterDiv js html css col-xs-6 col-sm-6 col-md-4 col-mgbtm">
@@ -283,12 +328,43 @@ class Main extends React.Component {
             </div>
           </div>
         </div>
-
-        <div class="contact">
+    
+        <div class="cate-cont contact">
           <div class="cont-title">CONTACT</div>
           <hr />
+
+          <div class="row about-row">
+            <div class="col-md-6 about-cont about-cont-first">
+              <div class="contact-info">
+                <div class="myinfo" style={{ height: "50%" }}>
+                  <div style={{ marginLeft: "15px", fontSize: "30px" }}>My Info</div>
+                  <div><i class="fa fa-address-book-o"></i> NAME : JEONG HYUN SEOK</div>
+                  <div><i class="fa fa-envelope"></i> EMAIL : jhs92043@gmail.com</div>
+                  <div> <i class="fa fa-phone"></i>  PHONE : +82.10.4112.4823</div>
+                  <div> <i class='fa fa-map-marker'></i> ADDRESS</div>
+                </div>
+                {/* 지도 */}
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12636.538516375305!2d126.620497!3d37.6460388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7cb429b244e1b6f!2zTEjtlZzqsIDrnozrp4jsnYQy64uo7KeA!5e0!3m2!1sko!2skr!4v1544424877948"
+                  style={{ border: "0", width: "95%", height: "50%", frameborder: "0", textAlign: "center", margin: "2.5%", marginTop: "-10px" }} allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-6 about-cont about-cont-second">
+
+              <div class="contact-mail">
+                <div class="send-mail" style={{ height: "50%" }}>
+                  <div style={{ marginLeft: "15px", fontSize: "30px" }}>SEND</div>
+                  <input class="send-input" placeholder="NAME" ref="name"></input>
+                  <input class="send-input" placeholder="E-MAIL" ref="email"></input>
+                  <input class="send-input" placeholder="PHONE" ref="phone"></input>
+                  <textarea class="send-input"style={{background:"none",height:"70%"}} ref="message"></textarea>
+                  <button class="send-button"  onClick={this.fnSend} >SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     );
   }
 }

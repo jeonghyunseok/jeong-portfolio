@@ -1,6 +1,17 @@
-.page-conts{
-
+.works{
+ margin-top: 200px;
 }
+.contact{
+  margin-top: 200px;
+  background-image: url("../images/back3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+ }
+
+
 .page-conts hr{
   width: 10%;
   height: 1px;
@@ -26,14 +37,15 @@
 }
 .jumbotron{
 background: none;
+padding-right:0px !important;
+padding-left:0px !important;
 }
 .show {
   display: block;
 }
 
 .container {
-  /* margin-top: 20px;
-  overflow: hidden; */
+ padding: 0px;
 }
 
 .myBtnContainer{
@@ -88,7 +100,7 @@ background: none;
 }
 
 
-.cat_head {
+.con_head {
 	background:" #f4f4f4";
 }
 
@@ -102,12 +114,7 @@ background: none;
 
 }
 
-@media screen and (max-width: 500px) {
-	.cat_check .col-xs-6 {
-		float: none;
-		width: 100%;
-	}
-}
+
 
 .about-row{
   margin-bottom: 50px;
@@ -132,10 +139,22 @@ background: none;
 } 
 .cont-title-about{
   text-align: center;
-  padding-top: 0px;
+  padding-top: 48px;
   font-weight: 700;
   font-size: 40px;
-  margin-top: 40px;
+  margin-top: 0px;
+
+}
+
+.cont-title-keyword{
+  text-align: center;
+  padding-top: 48px;
+  font-weight: 700;
+  font-size: 35px;
+  margin-top: 0px;
+}
+.cont-about-hr{
+  margin-bottom:30px;
 }
 .about-cont{
   text-align: center;
@@ -156,47 +175,6 @@ background: none;
 .about-cont-second{
   background-color: none;
 }
-.cont-about-hr{
-  display: none;
-}
-
-/* .about-ul{
-  margin-top:30px;
-}
-.about-li{
-  border: 2px solid #333;
-  border-radius: 5px;
-  margin: 5px;
-  font-size: 20px;
-  padding: 4px;
-} */
-
-
-/* 모바일 CSS (Jeong)   */
-@media (max-width:760px) {
-.about-cont-first{
-  display: none;
-}
-.about-cont-second{
-  text-align: center;
- 
-  width: 100%;
-}
-
-.cont-title-about{
-  text-align: center;
-  padding-top: 48px;
-  font-weight: 700;
-  font-size: 40px;
-  margin-top: 0px;
-
-}
-.cont-about-hr{
-  display: block;
-}
-}
-
-
 
 .about-ul {
   color: black;
@@ -212,3 +190,111 @@ background: none;
   border: 2px solid;
   border-radius: 5px;
 }
+.contact-info{
+  background-color: rgba(153, 145, 191, 0.5);
+  height: 500px;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.contact-mail{
+  background-color:rgba(153, 145, 191, 0.5);
+  height: 500px;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.myinfo{
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  font-family: 'Godo';
+  padding: 30px;
+  padding-left: 10px;
+  padding-top: 15px;
+  line-height: 1.7;
+  color: #333333;
+}
+
+
+.myinfo div{
+  margin-left: 10px;
+}
+.send-mail{
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  font-family: 'Godo';
+  padding: 30px;
+  padding-left: 10px;
+  padding-top: 15px;
+  line-height: 1.7;
+  color: #333333;
+}
+.send-input{
+  font-size: 25px !important;
+  width: 100%;
+  padding-left: 15px;
+  border: 2px solid white;
+  margin: 10px;
+  line-height: 2;
+  color: #333333;
+}
+.send-button{
+   background: none;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    float: right;
+    margin-right: -2%;
+    border-radius: 10px;
+    color: white;
+}
+.send-button:hover{
+  background: none;
+  border: 2px solid #507dbc;
+  color: #507dbc;
+  font-size: 18px;
+  float: right;
+  margin-right: -2%;
+  border-radius: 10px;
+}
+/* 모바일 CSS (Jeong)   */
+@media (max-width:760px) {
+.about-cont-first{
+  display: none;
+}
+.about-cont-second{
+  text-align: center;
+ 
+  width: 100%;
+}
+
+.cont-about-hr{
+  margin-bottom:20px;
+}
+.cont-title-keyword{
+  display: none;
+}
+
+.contact-mail{
+
+  margin-left: auto;
+}
+}
+
+
+
+@media screen and (max-width: 500px) {
+	.con_check .col-xs-6 {
+		float: none;
+		width: 100%;
+	}
+}
+
+
