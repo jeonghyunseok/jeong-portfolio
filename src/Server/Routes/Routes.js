@@ -3,7 +3,19 @@ var express = require("express");
 var app = express();
 var router = express.Router();
 var bodyParser = require("body-parser");
+// 이메일
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'jhs92043@gmail.com',
+    pass: 'rkdmf4823!'
+  }
+});
+
 router.use(bodyParser.urlencoded({ extended: false }));
+
 
 // DEFINE MODEL
 // var Member = require("../../Models/Member");
@@ -81,5 +93,39 @@ router.get("/", function (req, res) {
 //     res.render("index");
 // });
 
+
+//이메일 보내기
+router.post("/mail",function(req,res){
+ 
+    // var nodemailer = require('nodemailer');
+
+    // var transporter = nodemailer.createTransport({
+    //   service: 'gmail',
+    //   auth: {
+    //     user: 'jhs92043@gmail.com',
+    //     pass: 'rkdmf4823!'
+    //   }
+    // });
+    
+    var mailOptions = {
+      from: req.body.email,
+      to: 'jhs92043@gmail.com',
+      subject: 'MAIL FROM WHALE TEACHER',
+      html:  '<h2>EMAIL:'+req.body.email+'</h2>'
+            +'<h2>NAME:'+req.body.name+'</h2>'
+            +'<h2>PHONE:'+req.body.phone+'</h2>'
+            +'<h2>MESSAGE:'+req.body.message+'</h2>'
+    };
+    
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+        return res.status(200).json({ "result": "ok"});
+      }
+    });
+
+})
 
 module.exports = router;

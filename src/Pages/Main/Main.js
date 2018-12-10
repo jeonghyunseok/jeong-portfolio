@@ -2,15 +2,13 @@
 import React, { Component } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import axios from "axios";
-// import Pagination from "react-js-pagination";
+import axios from "axios";
+
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      // userId: ""
-    };
+
     //btn click을 통한 페이지 이동 기능
     // this.btnJoin = this.btnJoin.bind(this);
     this.filterSelection = this.filterSelection.bind(this);
@@ -18,6 +16,10 @@ class Main extends React.Component {
     this.w3RemoveClass = this.w3RemoveClass.bind(this);
     this.fnSend = this.fnSend.bind(this);
   }
+
+// 로딩 스피너
+
+
 // 이메일 보내기
 fnSend(e){
   let name = this.refs.name.value;
@@ -47,7 +49,7 @@ fnSend(e){
   var regEmail =/^[-A-Za-z0-9_]+[-A-Za-z0-9_.]*[@]{1}[-A-Za-z0-9_]+[-A-Za-z0-9_.]*[.]{1}[A-Za-z]{1,5}$/g
   if(!regEmail.test(email))
   {
-    swal({ title: '이메을을 알맞은 형식으로 입력해주세요', icon: "info" })
+    swal({ title: '이메일을 알맞은 형식으로 입력해주세요', icon: "info" })
     return false;
   }
   var regNumber = /^[0-9]*$/;
@@ -57,9 +59,19 @@ fnSend(e){
     return false;
   }
 
-
-  swal({ title: '이메일', icon: "success" })
-  // .then((value) => { })
+      axios.post('/mail',{
+        name : this.refs.name.value,
+        email :this.refs.email.value,
+        phone : this.refs.phone.value,
+        message : this.refs.message.value
+      }).then(function (data) {
+        swal({ title: '이메일 전송에 성공 했습니다', icon: "success" })
+        .then((value) => {  location.reload(); })
+       
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 }
 
   w3AddClass(element, name) {
@@ -128,6 +140,36 @@ fnSend(e){
 
 
   componentDidMount() {
+    // 로딩 스피너
+    axios.interceptors.request.use(function (config) {
+
+      // spinning start to show
+      // UPDATE: Add this code to show global loading indicator
+      document.body.classList.add('loading-indicator');
+    
+      const token = window.localStorage.token;
+      if (token) {
+         config.headers.Authorization = `token ${token}`
+      }
+      return config
+    }, function (error) {
+      return Promise.reject(error);
+    });
+    
+    axios.interceptors.response.use(function (response) {
+    
+      // spinning hide
+      // UPDATE: Add this code to hide global loading indicator
+      document.body.classList.remove('loading-indicator');
+    
+      return response;
+    }, function (error) {
+      return Promise.reject(error);
+    });
+  //************************************************ */
+
+
+
     AOS.init({
       duration: 1000
     })
@@ -186,16 +228,19 @@ fnSend(e){
 
 
   render() {
-    const { options } = this.state;
+
+
+    
+  
 
     <meta charSet="utf-8" />;
     require("es6-promise").polyfill();
     require("../../css/main.css");
 
     return (
-
+      
       <div class="page-conts">
-
+        <p id="about"></p>
         <div class="cate-cont about">
           <div class="row about-row">
             <div class="cont-title-about">ABOUT</div>
@@ -210,13 +255,13 @@ fnSend(e){
                 미래를 예측하는 가장 확실한 방법은, 미래를 만드는 것이라고 생각합니다.
                 <br />더 나은 미래를 만들어 나가는 개발자 정현석 입니다.
             </div>
-              <ul class="about-ul">
+              <ul  class="about-ul">
                 <li class="about-li" data-aos="zoom-in">DEVELOPER</li>
                 <li class="about-li" data-aos="zoom-in">PROGRAMMING</li>
                 <br />
                 <li class="about-li" data-aos="zoom-in">1992</li>
-                <li class="about-li" data-aos="zoom-in">MALE</li>
-                <li class="about-li" data-aos="zoom-in">GIMPO</li>
+                <li  class="about-li" data-aos="zoom-in">MALE</li>
+                <li   class="about-li" data-aos="zoom-in">GIMPO</li>
                 <br />
                 <li class="about-li" data-aos="zoom-in">WEB SERVER</li>
                 <li class="about-li" data-aos="zoom-in">JavaScript</li>
@@ -227,18 +272,18 @@ fnSend(e){
           </div>
         </div>
 
-        <div class="cate-cont works">
+        <p id="work"></p>
+        <div  class="cate-cont works">
           <div class="cont-title">WORKS</div>
-          <hr />
+          <hr/>
 
           <div id="myBtnContainer" ref="myBtnContainer" class="myBtnContainer" data-aos='fade-up' >
-            <button class="btn active" onCdivck={() => this.filterSelection("all")}>All</button>
+            <button class="btn active" onClick={() => this.filterSelection("all")}>All</button>
             <button class="btn" onClick={() => this.filterSelection("js")}> JavaScript</button>
             <button class="btn" onClick={() => this.filterSelection('html')}> Html</button>
             <button class="btn" onClick={() => this.filterSelection('css')}> Css</button>
 
           </div>
-
           <div class="container" data-aos='fade-up'>
 
 
@@ -328,27 +373,27 @@ fnSend(e){
             </div>
           </div>
         </div>
-    
-        <div class="cate-cont contact">
-          <div class="cont-title">CONTACT</div>
+      <p id="contact"></p>
+        <div  class="cate-cont contact">
+          <div   class="cont-title">CONTACT</div>
           <hr />
 
           <div class="row about-row">
-            <div class="col-md-6 about-cont about-cont-first">
+            <div class="col-md-6 about-cont  contact-cont-first">
               <div class="contact-info">
                 <div class="myinfo" style={{ height: "50%" }}>
                   <div style={{ marginLeft: "15px", fontSize: "30px" }}>My Info</div>
-                  <div><i class="fa fa-address-book-o"></i> NAME : JEONG HYUN SEOK</div>
-                  <div><i class="fa fa-envelope"></i> EMAIL : jhs92043@gmail.com</div>
-                  <div> <i class="fa fa-phone"></i>  PHONE : +82.10.4112.4823</div>
-                  <div> <i class='fa fa-map-marker'></i> ADDRESS</div>
+                  <div class="info-text"><i class="fa fa-address-book-o"></i> NAME : JEONG HYUN SEOK</div>
+                  <div class="info-text"><i class="fa fa-envelope"></i> EMAIL : jhs92043@gmail.com</div>
+                  <div class="info-text"> <i class="fa fa-phone"></i>  PHONE : +82.10.4112.4823</div>
+                  <div class="info-text"> <i class='fa fa-map-marker'></i> ADDRESS</div>
                 </div>
                 {/* 지도 */}
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12636.538516375305!2d126.620497!3d37.6460388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7cb429b244e1b6f!2zTEjtlZzqsIDrnozrp4jsnYQy64uo7KeA!5e0!3m2!1sko!2skr!4v1544424877948"
                   style={{ border: "0", width: "95%", height: "50%", frameborder: "0", textAlign: "center", margin: "2.5%", marginTop: "-10px" }} allowfullscreen></iframe>
               </div>
             </div>
-            <div class="col-md-6 about-cont about-cont-second">
+            <div class="col-md-6 about-cont contact-cont-second">
 
               <div class="contact-mail">
                 <div class="send-mail" style={{ height: "50%" }}>

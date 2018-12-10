@@ -1,8 +1,34 @@
 .works{
- margin-top: 200px;
+  margin-top: 70px;
 }
+
+/* @media screen and (min-width:995px)and (max-width:1200px) {
+  .works{
+  margin-top: 140px;
+  }
+}
+@media screen and (min-width:651px)and (max-width:994px) {
+  .works{
+  margin-top: 210px;
+  }
+}
+@media screen and (min-width:490px)and (max-width:650px) {
+  .works{
+  margin-top: 300px;
+  }
+}
+    @media screen and (min-width:351px)and (max-width:489px) {
+      .works{
+      margin-top: 420px;
+      }
+    }
+    @media screen and (max-width:350px) {
+      .works{
+      margin-top: 500px;
+      }
+    } */
 .contact{
-  margin-top: 200px;
+  /* margin-top: 200px; */
   background-image: url("../images/back3.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -139,7 +165,7 @@ padding-left:0px !important;
 } 
 .cont-title-about{
   text-align: center;
-  padding-top: 48px;
+  padding-top: 100px;
   font-weight: 700;
   font-size: 40px;
   margin-top: 0px;
@@ -148,13 +174,13 @@ padding-left:0px !important;
 
 .cont-title-keyword{
   text-align: center;
-  padding-top: 48px;
+  padding-top: 15px;
   font-weight: 700;
   font-size: 35px;
   margin-top: 0px;
 }
 .cont-about-hr{
-  margin-bottom:30px;
+  margin-bottom:100px;
 }
 .about-cont{
   text-align: center;
@@ -164,7 +190,7 @@ padding-left:0px !important;
 }
 .about-img{
   width: 100%;
-  height: 60%;
+  height: 50%;
 
   margin-left: 2%;
   background-image: url("../images/about.jpg");
@@ -180,6 +206,7 @@ padding-left:0px !important;
   color: black;
   font-size: 0;
   text-align: center;
+  margin-top:50px;
 }
 .about-li {
   padding: 7px 15px;
@@ -191,6 +218,7 @@ padding-left:0px !important;
   border-radius: 5px;
 }
 .contact-info{
+  word-break:break-all;
   background-color: rgba(153, 145, 191, 0.5);
   height: 500px;
   width: 75%;
@@ -201,6 +229,7 @@ padding-left:0px !important;
 }
 
 .contact-mail{
+  word-break:break-all;
   background-color:rgba(153, 145, 191, 0.5);
   height: 500px;
   width: 75%;
@@ -243,7 +272,7 @@ padding-left:0px !important;
   padding-left: 15px;
   border: 2px solid white;
   margin: 10px;
-  line-height: 2;
+  height: 2em;
   color: #333333;
 }
 .send-button{
@@ -298,3 +327,41 @@ padding-left:0px !important;
 }
 
 
+
+.info-text{
+  font-size: 25px
+}
+
+@media screen and (min-width:1270px) and (max-width:1300px){
+  .info-text{
+font-size: 20px;
+margin-top: 10px;
+  }
+}
+@media screen and (min-width:1100px) and (max-width:1269px){
+  .info-text{
+font-size: 15px;
+margin-top: 10px;
+  }
+}
+@media screen and (max-width:1099px){
+  .contact-cont-first{
+    display: none !important;
+  }
+  .contact-cont-second{
+    text-align: center;
+ 
+    width: 100%;
+  }
+  .contact-mail{
+
+    margin-left: auto;
+  }
+}
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  
+
+}

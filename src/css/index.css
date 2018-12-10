@@ -19,6 +19,13 @@ body {
   transition: 0.5s;
  }
   /* 배너 텍스트 */
+  .anc-atag{
+    text-decoration: none;
+    padding:0px;
+  }
+  .anc-atag:hover{
+    text-decoration: none;
+  }
 .bg-text{
   position: absolute;
   margin-top: 350px;
@@ -302,6 +309,36 @@ ul {
 	transform: translateY(-0.35em) translateX(-0.65em) rotate(-45deg) scaleX(0.6);
 
 }
+
+/* 로딩 스피너 */
+
+
+/* Define css class for global loading message to cover 
+   screen during axios operations */
+
+.loading-indicator:before {
+    content: '';
+    background: #000000cc;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.loading-indicator:after {
+    content: url('../images/loading.svg');
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 1001;
+    color:white;
+    text-align:center;
+      
+}
+
 
 
 
