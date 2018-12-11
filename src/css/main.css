@@ -232,7 +232,7 @@ padding-left:0px !important;
   word-break:break-all;
   background-color:rgba(153, 145, 191, 0.5);
   height: 500px;
-  width: 75%;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
   margin-top: 50px;
@@ -317,7 +317,10 @@ padding-left:0px !important;
 }
 }
 
-
+/* 포트폴리오 이미지 */
+.portfolil-img{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 500px) {
 	.con_check .col-xs-6 {

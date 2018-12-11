@@ -3,16 +3,7 @@ var express = require("express");
 var app = express();
 var router = express.Router();
 var bodyParser = require("body-parser");
-// 이메일
-var nodemailer = require('nodemailer');
 
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'jhs92043@gmail.com',
-    pass: 'rkdmf4823!'
-  }
-});
 
 router.use(bodyParser.urlencoded({ extended: false }));
 
@@ -97,15 +88,16 @@ router.get("/", function (req, res) {
 //이메일 보내기
 router.post("/mail",function(req,res){
  
-    // var nodemailer = require('nodemailer');
+ // 이메일
+var nodemailer = require('nodemailer');
 
-    // var transporter = nodemailer.createTransport({
-    //   service: 'gmail',
-    //   auth: {
-    //     user: 'jhs92043@gmail.com',
-    //     pass: 'rkdmf4823!'
-    //   }
-    // });
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'jhs92043@gmail.com',
+    pass: 'rkdmf4823!'
+  }
+});
     
     var mailOptions = {
       from: req.body.email,

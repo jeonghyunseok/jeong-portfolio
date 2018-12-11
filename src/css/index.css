@@ -1,4 +1,7 @@
 
+html{
+  height: 100%;
+}
 body {
   min-height:100%;
   height:100%;
@@ -12,12 +15,49 @@ body {
     align-items: center;
     justify-content: center;
   }
+  #body{
+    width: 100%;
+  }
  #header{
+  width: 100%;
    transition: 0.5s;
  }
  #root{
+  width: 100%;
   transition: 0.5s;
  }
+ #footer{
+  background-color: #eee;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 100px;
+ }
+
+/* 스크롤탑 */
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 33px;
+  right: 25px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+
+#myBtn:hover {
+  background-color: #4593b9;
+  opacity:1;
+}
   /* 배너 텍스트 */
   .anc-atag{
     text-decoration: none;
@@ -346,6 +386,11 @@ ul {
 
 
 @media (max-width:760px) {
+
+  /* 스크롤 업 삭제 */
+  #myBtn{
+    display: none !important;
+  }
    .mouse-container{
     position: absolute;
     display: block !important;
