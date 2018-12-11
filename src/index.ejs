@@ -44,7 +44,7 @@
     <i class="fa fa-phone" style="font-size:14px ;margin-right:8px"></i> PHONE<br />
     <p>+82.10.4112.4823</p> <br />
     <i class="fa fa-github" style="font-size:14px ;margin-right:8px"></i> GITHUB<br />
-    <p>https://github.com/jeonghyunseok</p>
+    <p style="cursor:pointer" onclick="github()">https://github.com/jeonghyunseok</p>
   </span>
 </div>
 
@@ -388,6 +388,11 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+    }
+
+    //GO GITHUB
+    function github(){
+      window.open('https://github.com/jeonghyunseok','_blank');
     }
     </script>
 </html>

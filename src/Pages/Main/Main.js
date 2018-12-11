@@ -273,98 +273,70 @@ class Main extends React.Component {
           <hr />
           <div id="myBtnContainer" ref="myBtnContainer" class="myBtnContainer" data-aos='fade-up' >
             <button class="btn active" onClick={() => this.filterSelection("all")}>All</button>
-            <button class="btn" onClick={() => this.filterSelection("js")}> JavaScript</button>
-            <button class="btn" onClick={() => this.filterSelection('html')}> Html</button>
-            <button class="btn" onClick={() => this.filterSelection('css')}> Css</button>
+            <button class="btn" onClick={() => this.filterSelection("node")}> Node.js</button>
+            <button class="btn" onClick={() => this.filterSelection('asp')}>ASP.NET</button>
+            <button class="btn" onClick={() => this.filterSelection('js')}>JavaScript</button>
+            <button class="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button>
 
           </div>
           <div class="container" data-aos='fade-up'>
 
 
-            <div class="jumbotron con_head">
-              <div class="row con_check">
-
-
-                <div class="filterDiv js html css col-xs-6 col-sm-6 col-md-4 col-mgbtm">
-                  <div >
-                    <label class="whatever portfolil-img" for="r1">
-                      <div class=" img-responsive width100" />
-                      <img src="https://www.planwallpaper.com/static/images/518164-backgrounds.jpg" class=" img-responsive width100" />
-                      <div class="row">
-                        <div class="col-xs-offset-3 col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                        <div class="col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
+            <div class="filterDiv asp port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../images/dhkorea.png" alt="" />
+                <div class="overlay">
+                  <h2 class="overlay-title">대신출판 고객 서비스 웹</h2>
+                  <h2 class="overlay-skills">C# / ASP.NET / MSSQL / HTML / CSS / Admin Web</h2>
+                  <p>
+                    <a class="overlay-view" target="_blank" href="http://dhkorea.vrware.us/">view more > </a>
+                  </p>
                 </div>
-
-
-                <div class="filterDiv js  css col-xs-6 col-sm-6 col-md-4 col-mgbtm">
-                  <div >
-                    <label class="whatever portfolil-img" for="r1">
-                      <img src="https://www.planwallpaper.com/static/images/518164-backgrounds.jpg" class=" img-responsive width100" />
-                      <div class="row">
-                        <div class="col-xs-offset-3 col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                        <div class="col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-
-                <div class="filterDiv js html css col-xs-6 col-sm-6 col-md-4 col-mgbtm">
-                  <div >
-                    <label class="whatever portfolil-img" for="r1">
-                      <img src="https://www.planwallpaper.com/static/images/518164-backgrounds.jpg" class=" img-responsive width100" />
-                      <div class="row">
-                        <div class="col-xs-offset-3 col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                        <div class="col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-
-                <div class="filterDiv js  col-xs-6 col-sm-6 col-md-4 col-mgbtm">
-                  <div>
-                    <label class="whatever portfolil-img" for="r1">
-                      <img src="https://www.planwallpaper.com/static/images/518164-backgrounds.jpg" class=" img-responsive width100" />
-                      <div class="row">
-                        <div class="col-xs-offset-3 col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                        <div class="col-xs-3">
-                          <div class="check_details">
-                          </div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-
-
               </div>
             </div>
+
+            <div class="filterDiv asp js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../images/arivri.png" alt="" />
+                <div class="overlay">
+                  <h2 class="overlay-title">VRWARE 소개 웹</h2>
+                  <h2 class="overlay-skills"> ASP.NET / HTML / CSS / JS / Responsive / PLANNING</h2>
+                  <p>
+                    <a class="overlay-view" target="_blank" href="http://play.vrware.us/">view more > </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="filterDiv node js  port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../images/storybook.png" alt="" />
+                <div class="overlay">
+                  <h2 class="overlay-title">STORYBOOK 쇼핑 웹</h2>
+                  <h2 class="overlay-skills"> NODE.JS / MONGO DB / REACT.JS / AWS </h2>
+                  <p>
+                    <a class="overlay-view" target="_blank" href="http://storybook.vrware.us/">view more > </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="filterDiv js my port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../images/todo.png" alt="" />
+                <div class="overlay">
+                  <h2 class="overlay-title">SCHEDULE NOTE WEB</h2>
+                  <h2 class="overlay-skills"> VANILLA.JS / Local Storage / ES5 vs ES6 </h2>
+                  <p>
+                    <a class="overlay-view" target="_blank" href="http://whaleteacher.com:3000/">view more > </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
         <p id="contact"></p>
@@ -401,7 +373,7 @@ class Main extends React.Component {
             </div>
           </div>
         </div>
-      <div id="footer">© JEONG HYUN SEOK 2018.</div>
+        <div id="footer">© JEONG HYUN SEOK 2018.</div>
       </div>
     );
   }
