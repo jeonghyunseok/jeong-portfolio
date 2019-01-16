@@ -1,0 +1,471 @@
+.works{
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.contact{
+  /* margin-top: 200px; */
+  background-image: url("../images/back3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+ }
+
+
+.page-conts hr{
+  width: 10%;
+  height: 1px;
+ background-color: black;
+ border-top: 0px solid;
+
+}
+.cont-title{
+  text-align: center;
+  padding-top: 48px;
+  font-weight: 700;
+  font-size: 40px;
+
+}
+
+
+
+/* 카테고리 필터 */
+
+.filterDiv {
+  
+ display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+ padding: 0px;
+}
+
+.myBtnContainer{
+  padding: 2%;
+  text-align: center;
+}
+
+/* Style the buttons */
+.btn {
+  display: inline-block;
+  margin: 3px;
+    padding: .4em .8em;
+    background: #fff;
+    border: 2px solid #333;
+    font-size: 16px;
+    font-family: 'Nanum gothic', arial, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+  
+}
+
+.btn:hover {
+  background-color:rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+
+}
+
+.btn.active {
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+/* 리스트 배치 */
+
+.width100 {
+  width: "100%";
+}
+
+.col-mgbtm {
+	margin-bottom: "25px";
+}
+
+.font-josefin {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.grey-hd1 {
+  color: "#4a4a4a";
+  font-size: "25px";
+  font-weight: "600";
+}
+
+
+.con_head {
+	background:" #f4f4f4";
+}
+
+.dots {
+	text-align: "center";
+	margin-bottom: "20px";
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+
+}
+
+
+
+.about-row{
+  margin-bottom: 50px;
+}
+
+@font-face { font-family: 'Godo'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff'); } @font-face { font-family: 'Godo'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff'); } .godo * { font-family: 'Godo', sans-serif; }
+/* .about-slogan-first{
+  font-size: 19px;
+  margin-top: 3%;
+  margin-left: 2%;
+  font-family: 'Godo';
+  line-height: 2;
+  width: 100%;
+}*/
+.about-slogan-second{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 4%;
+  font-family: 'Godo';
+  display: block !important;
+} 
+.cont-title-about{
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 0px;
+
+}
+
+.cont-title-keyword{
+  text-align: center;
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 35px;
+  margin-top: 0px;
+}
+.cont-about-hr{
+  margin-bottom:100px;
+}
+.about-cont{
+  text-align: center;
+  float: left;
+  width: 50%;
+
+}
+.about-img{
+  width: 100%;
+  height: 50%;
+
+  margin-left: 2%;
+  background-image: url("../images/about.jpg");
+  background-size: 100% 100%;
+
+}
+
+.about-cont-second{
+  background-color: none;
+}
+
+.about-ul {
+  color: black;
+  font-size: 0;
+  text-align: center;
+  margin-top:50px;
+}
+.about-li {
+  padding: 7px 15px;
+  margin: 0 16px 16px 0;
+  letter-spacing: 4px;
+  font-size: 18px;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.contact-info{
+  word-break:break-all;
+  background-color: rgba(153, 145, 191, 0.5);
+  height: 500px;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.contact-mail{
+  word-break:break-all;
+  background-color:rgba(153, 145, 191, 0.5);
+  height: 500px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.myinfo{
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  font-family: 'Godo';
+  padding: 30px;
+  padding-left: 10px;
+  padding-top: 15px;
+  line-height: 1.7;
+  color: #333333;
+}
+
+
+.myinfo div{
+  margin-left: 10px;
+}
+.send-mail{
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  font-family: 'Godo';
+  padding: 30px;
+  padding-left: 10px;
+  padding-top: 15px;
+  line-height: 1.7;
+  color: #333333;
+}
+.send-input{
+  font-size: 25px !important;
+  width: 100%;
+  padding-left: 15px;
+  border: 2px solid white;
+  margin: 10px;
+  height: 2em;
+  color: #333333;
+}
+.send-button{
+   background: none;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    float: right;
+    margin-right: -2%;
+    border-radius: 10px;
+    color: white;
+}
+.send-button:hover{
+  background: none;
+  border: 2px solid #507dbc;
+  color: #507dbc;
+  font-size: 18px;
+  float: right;
+  margin-right: -2%;
+  border-radius: 10px;
+}
+/* 모바일 CSS (Jeong)   */
+@media (max-width:760px) {
+.about-cont-first{
+  display: none;
+}
+.about-cont-second{
+  text-align: center;
+ 
+  width: 100%;
+}
+
+.cont-about-hr{
+  margin-bottom:20px;
+}
+.cont-title-keyword{
+  display: none;
+}
+
+.contact-mail{
+
+  margin-left: auto;
+}
+}
+
+/* 포트폴리오 이미지 */
+.img-responsive{
+  width: 100%;
+  margin: 0 auto;
+}
+.port-cont-div{
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+.hovereffect {
+  width: 100%;
+  /* height: 100%; */
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.3);
+  -webkit-filter: brightness(0.3);
+}
+
+.hovereffect h2 {
+  font-family: 'Godo';
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  background-color: transparent;
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+@media screen and (min-width: 1200px) {
+.overlay-title  {padding-top: 10px;  font-size: 25px !important;  padding-bottom: 10px;}
+.overlay-skills {font-size: 20px}
+.overlay-view   {font-size: 20px}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .overlay-title  {padding-top: 5px;   font-size: 20px !important;   padding-bottom: 5px;}
+  .overlay-skills {font-size: 17px !important;}
+  .overlay-view   {font-size: 17px}
+  }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .overlay-title  {padding-top: 5px;  font-size: 25px !important;  padding-bottom: 5px;}
+    .overlay-skills {font-size: 18px !important; padding-bottom: 5px;}
+    .overlay-view   {font-size: 21px;}
+  }
+@media screen and (min-width: 432px) and (max-width: 767px){
+  .overlay-title  {    padding-top: 10px;    font-size: 30px !important;    padding-bottom: 10px;}
+  .overlay-skills {    font-size: 25px !important;    padding-bottom: 10px;}
+  .overlay-view   {font-size: 25px;}
+}
+@media screen and (min-width: 300px) and (max-width: 431px){
+  .overlay-title  {     padding-top: 5px;    font-size: 23px !important;    padding-bottom: 5px;}
+  .overlay-skills {     font-size: 20px !important;    padding-bottom: 0px;}
+  .overlay-view   {font-size: 25px;}
+}
+@media screen and (max-width: 299px){
+  .overlay-title  { padding-top: 0px;     font-size: 18px !important; padding-bottom: 0px; }
+  .overlay-skills {    font-size: 15px !important;  padding-bottom: 0px; }
+  .overlay-view   {font-size: 15px;}
+}
+
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+@media screen and (max-width: 500px) {
+	.con_check .col-xs-6 {
+		float: none;
+		width: 100%;
+	}
+}
+
+
+
+.info-text{
+  font-size: 25px
+}
+
+@media screen and (min-width:1270px) and (max-width:1300px){
+  .info-text{
+font-size: 20px;
+margin-top: 10px;
+  }
+}
+@media screen and (min-width:1100px) and (max-width:1269px){
+  .info-text{
+font-size: 15px;
+margin-top: 10px;
+  }
+}
+@media screen and (max-width:1099px){
+  .contact-cont-first{
+    display: none !important;
+  }
+  .contact-cont-second{
+    text-align: center;
+ 
+    width: 100%;
+  }
+  .contact-mail{
+
+    margin-left: auto;
+  }
+
+  .about-slogan-second{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 0%;
+    font-family: 'Godo';
+    display: block !important;
+  } 
+}
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  
+
+}
