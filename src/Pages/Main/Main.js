@@ -253,6 +253,7 @@ class Main extends React.Component {
                 <br />더 나은 미래를 만들어 나가는 개발자 정현석 입니다.
             </div>
               <ul class="about-ul">
+<<<<<<< HEAD
                 <li class="about-li" data-aos="zoom-in">1992</li>
                 <li class="about-li" data-aos="zoom-in">MALE</li>
                 <li class="about-li" data-aos="zoom-in">DEVELOPER</li>
@@ -266,6 +267,18 @@ class Main extends React.Component {
                 <li class="about-li" data-aos="zoom-in">ETC</li>
                 <br />
              
+=======
+                <li class="about-li" data-aos="zoom-in">DEVELOPER</li>
+                <li class="about-li" data-aos="zoom-in">PROGRAMMING</li>
+                <br />
+                <li class="about-li" data-aos="zoom-in">1992</li>
+                <li class="about-li" data-aos="zoom-in">MALE</li>
+                <li class="about-li" data-aos="zoom-in">GIMPO</li>
+                <br />
+                <li class="about-li" data-aos="zoom-in">WEB SERVER</li>
+                <li class="about-li" data-aos="zoom-in">JavaScript</li>
+                <li class="about-li" data-aos="zoom-in">ETC</li>
+>>>>>>> 9cd13028184df382dc81fd1eea0a55e58f959e88
               </ul>
             </div>
           </div>
@@ -276,11 +289,18 @@ class Main extends React.Component {
           <hr />
           <div id="myBtnContainer" ref="myBtnContainer" class="myBtnContainer" data-aos='fade-up' >
             <button class="btn active" onClick={() => this.filterSelection("all")}>All</button>
+<<<<<<< HEAD
             <button class="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button>
             <button class="btn" onClick={() => this.filterSelection("node")}> NODE.JS</button>
             <button class="btn" onClick={() => this.filterSelection('asp')}>ASP.NET</button>
             <button class="btn" onClick={() => this.filterSelection('js')}>JavaScript</button>
             <button class="btn" onClick={() => this.filterSelection('dapp')}>DAPP</button>
+=======
+            <button class="btn" onClick={() => this.filterSelection("node")}> Node.js</button>
+            <button class="btn" onClick={() => this.filterSelection('asp')}>ASP.NET</button>
+            <button class="btn" onClick={() => this.filterSelection('js')}>JavaScript</button>
+            <button class="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button>
+>>>>>>> 9cd13028184df382dc81fd1eea0a55e58f959e88
 
           </div>
           <div class="container" data-aos='fade-up'>
@@ -333,6 +353,7 @@ class Main extends React.Component {
                   <h2 class="overlay-title">SCHEDULE NOTE WEB</h2>
                   <h2 class="overlay-skills"> VANILLA.JS / Local Storage / ES5 vs ES6 </h2>
                   <p>
+<<<<<<< HEAD
                     <a class="overlay-view" target="_blank" href="http://whaleteacher.com:3001/">view more > </a>
                   </p>
                 </div>
@@ -346,6 +367,8 @@ class Main extends React.Component {
                   <h2 class="overlay-title">PET MARKET DAPP</h2>
                   <h2 class="overlay-skills"> SOLIDITY / TRUFFLE / ROPSTEN / INFURA / DAPP</h2>
                   <p>
+=======
+>>>>>>> 9cd13028184df382dc81fd1eea0a55e58f959e88
                     <a class="overlay-view" target="_blank" href="http://whaleteacher.com:3000/">view more > </a>
                   </p>
                 </div>
@@ -353,6 +376,10 @@ class Main extends React.Component {
             </div>
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9cd13028184df382dc81fd1eea0a55e58f959e88
           </div>
         </div>
         <p id="contact"></p>

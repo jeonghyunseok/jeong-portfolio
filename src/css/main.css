@@ -452,6 +452,7 @@ margin-top: 10px;
 
     margin-left: auto;
   }
+<<<<<<< HEAD
 
   .about-slogan-second{
     font-size: 15px;
@@ -461,6 +462,8 @@ margin-top: 10px;
     font-family: 'Godo';
     display: block !important;
   } 
+=======
+>>>>>>> 9cd13028184df382dc81fd1eea0a55e58f959e88
 }
 
 /* IE10+ */
