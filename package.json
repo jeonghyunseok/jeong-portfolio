@@ -67,8 +67,8 @@
   },
   "scripts": {
     "webpack": "webpack",
-    "start": "npm run webpack --config && nodemon --exec babel-node ./Bin/www",
-    "build": "react-scripts build",
+    "start": "npm run webpack --config && nodemon --exec babel-node ./Bin/www NODE_ENV=development webpack ",
+    "build": "npm run webpack --config && nodemon --exec babel-node ./Bin/www NODE_ENV=production webpack ",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

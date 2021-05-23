@@ -4,7 +4,17 @@ var webpack = require('webpack');
 
 
 module.exports = {
-   
+    // 플러그인 설정
+    plugins: [
+        // 환경 변수 등록/관리 설정
+        new webpack.EnvironmentPlugin({
+            NODE_ENV: 'development'
+        }),
+        new webpack.DefinePlugin({
+            NODE_ENV: 'development'
+
+        })
+    ],
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'src'),
