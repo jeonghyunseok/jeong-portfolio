@@ -257,9 +257,9 @@ class Main extends React.Component {
                 <li class="about-li" data-aos="zoom-in">MALE</li>
                 <li class="about-li" data-aos="zoom-in">DEVELOPER</li>
                 <br />
-                <li class="about-li" data-aos="zoom-in">MERN</li>
-                <li class="about-li" data-aos="zoom-in">BLOCKCHAIN</li>
-                <li class="about-li" data-aos="zoom-in">DAPP</li>
+                <li class="about-li" data-aos="zoom-in">Web Site</li>
+                <li class="about-li" data-aos="zoom-in">FrontEnd</li>
+                <li class="about-li" data-aos="zoom-in">JavaScript</li>
                 <br />
                 <li class="about-li" data-aos="zoom-in">AWS</li>
                 <li class="about-li" data-aos="zoom-in">WEB SERVER</li>
