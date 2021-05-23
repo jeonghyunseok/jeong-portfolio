@@ -1,6 +1,5 @@
 var server = require('../src/Server/Server');
-var port = 80
-
+var port = process.env.Port || 80
 
 server.listen(port, function() 
 {

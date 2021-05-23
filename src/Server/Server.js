@@ -15,12 +15,9 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "../../src"));
 app.use(express.static(path.join(__dirname, "../../src")));
 
-app.use(bodyParser.json({ limit: "50mb" }));
-app.use(bodyParser.urlencoded({ limit: "50mb", extended: false }));
 
 //세션 기능용
 app.use(cookieParser());
-
 // var db = mongoose.connection;
 // db.on("error", console.error);
 

@@ -84,7 +84,7 @@
     "favicons-webpack-plugin": "0.0.9",
     "style-loader": "^0.21.0",
     "webpack": "^4.23.0",
-    "webpack-cli": "^3.3.4"
+    "webpack-cli": "^3.3.12"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "Root.js",

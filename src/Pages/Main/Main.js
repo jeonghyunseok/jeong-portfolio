@@ -254,7 +254,7 @@ class Main extends React.Component {
             </div>
               <ul class="about-ul">
                 <li class="about-li" data-aos="zoom-in">1992</li>
-                <li class="about-li" data-aos="zoom-in">MALE</li>
+                <li class="about-li" data-aos="zoom-in">JEONG</li>
                 <li class="about-li" data-aos="zoom-in">DEVELOPER</li>
                 <br />
                 <li class="about-li" data-aos="zoom-in">Web Site</li>
@@ -277,10 +277,8 @@ class Main extends React.Component {
           <div id="myBtnContainer" ref="myBtnContainer" class="myBtnContainer" data-aos='fade-up' >
             <button class="btn active" onClick={() => this.filterSelection("all")}>All</button>
             <button class="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button>
-            <button class="btn" onClick={() => this.filterSelection("node")}> NODE.JS</button>
             <button class="btn" onClick={() => this.filterSelection('asp')}>ASP.NET</button>
             <button class="btn" onClick={() => this.filterSelection('js')}>JavaScript</button>
-            <button class="btn" onClick={() => this.filterSelection('dapp')}>DAPP</button>
 
           </div>
           <div class="container" data-aos='fade-up'>
@@ -313,34 +311,6 @@ class Main extends React.Component {
             </div>
 
 
-
-            <div class="filterDiv js my port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="../images/todo.png" alt="" />
-                <div class="overlay">
-                  <h2 class="overlay-title">SCHEDULE NOTE WEB</h2>
-                  <h2 class="overlay-skills"> VANILLA.JS / Local Storage / ES5 vs ES6 </h2>
-                  <p>
-                    <a class="overlay-view" target="_blank" href="http://whaleteacher.com:3001/">view more > </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="filterDiv js my dapp port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="../images/pet.png" alt="" />
-                <div class="overlay">
-                  <h2 class="overlay-title">PET MARKET DAPP</h2>
-                  <h2 class="overlay-skills"> SOLIDITY / TRUFFLE / ROPSTEN / INFURA / DAPP</h2>
-                  <p>
-                    <a class="overlay-view" target="_blank" href="http://whaleteacher.com:3000/">view more > </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
           </div>
         </div>
         <p id="contact"></p>
@@ -358,7 +328,7 @@ class Main extends React.Component {
                   <div class="info-text"> <i class='fa fa-map-marker'></i> ADDRESS</div>
                 </div>
                 {/* 지도 */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12636.538516375305!2d126.620497!3d37.6460388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7cb429b244e1b6f!2zTEjtlZzqsIDrnozrp4jsnYQy64uo7KeA!5e0!3m2!1sko!2skr!4v1544424877948"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.3431152467338!2d127.06827661531096!3d37.54697917980157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4c49bb7f301%3A0xb97bc60a5ff5f23a!2z7ISc7Jq47Yq567OE7IucIOq0keynhOq1rCDtmZTslpHrj5kg6rWw7J6Q66GcIDQ0LTE!5e0!3m2!1sko!2skr!4v1621790578097!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                   style={{ border: "0", width: "95%", height: "50%", frameborder: "0", textAlign: "center", margin: "2.5%", marginTop: "-10px" }} allowfullscreen></iframe>
               </div>
             </div>
@@ -377,7 +347,7 @@ class Main extends React.Component {
             </div>
           </div>
         </div>
-        <div id="footer">© JEONG HYUN SEOK 2019.</div>
+        <div id="footer">© JEONG HYUN SEOK 2021.</div>
       </div>
     );
   }
