@@ -30,6 +30,9 @@
 }
 
 
+.about-slogan-third-a{
+  color: #333;
+}   
 
 /* 카테고리 필터 */
 
@@ -181,6 +184,16 @@
   margin-top:50px;
 }
 .about-li {
+  padding: 7px 15px;
+  margin: 0 16px 16px 0;
+  letter-spacing: 4px;
+  font-size: 18px;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.about-li-click {
+  cursor: pointer;
   padding: 7px 15px;
   margin: 0 16px 16px 0;
   letter-spacing: 4px;

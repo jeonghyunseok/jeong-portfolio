@@ -3,8 +3,11 @@ import React, { Component } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from "axios";
-
-
+const headers = {
+  'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+  'Accept': '*/*'
+}
+axios.defaults.headers.post = null
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -56,20 +59,13 @@ class Main extends React.Component {
       swal({ title: '전화번호에 숫자만 입력해 주세요', icon: "info" })
       return false;
     }
-
-    axios.post('/mail', {
-      name: this.refs.name.value,
-      email: this.refs.email.value,
-      phone: this.refs.phone.value,
-      message: this.refs.message.value
-    }).then(function (data) {
+    axios.get(`/mail?name=`+name+'&email='+email+'&phone='+phone+'&message='+message).then(function (data) {
       swal({ title: '이메일 전송에 성공 했습니다', icon: "success" })
         .then((value) => { location.reload(); })
-
     })
       .catch(function (error) {
         console.log(error);
-      });
+    });
   }
 
   w3AddClass(element, name) {
@@ -247,7 +243,8 @@ class Main extends React.Component {
               <div class="about-slogan-second">
                 미래를 예측하는 가장 확실한 방법은, 미래를 만드는 것이라고 생각합니다.
                 <br />더 나은 미래를 만들어 나가는 개발자 정현석 입니다.
-            </div>
+                <br />
+              </div>
               <ul class="about-ul">
                 <li class="about-li" data-aos="zoom-in">1992</li>
                 <li class="about-li" data-aos="zoom-in">JEONG</li>
@@ -261,11 +258,23 @@ class Main extends React.Component {
                 <li class="about-li" data-aos="zoom-in">WEB SERVER</li>
                 <li class="about-li" data-aos="zoom-in">ETC</li>
                 <br />
-             
               </ul>
+              <div class="about-slogan-second">
+                <a class="about-slogan-third-a" href="https://github.com/jeonghyunseok">GITHUB : https://github.com/jeonghyunseok</a>
+                <br /><a class="about-slogan-third-a" href="https://jeong92.tistory.com">BLOG : https://jeong92.tistory.com</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
             </div>
           </div>
         </div>
+        
+        <p id="about"></p>
+        <div class="cate-cont about">
+        <div class="row about-row"></div>
+        <div class="cont-title-about">CAREERS</div>
+        </div>
+        
         <p id="work"></p>
         <div class="cate-cont works">
           <div class="cont-title">WORKS</div>

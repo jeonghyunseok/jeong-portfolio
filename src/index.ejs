@@ -19,7 +19,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
   <!-- sweetalert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -41,9 +41,9 @@
   <span class="navMenuSpan navMenuBottom">
     <i class="fa fa-envelope" style="font-size:14px ;margin-right:8px"></i> EMAIL<br />
     <p>jhs92043@gmail.com</p> <br />
-    <i class="fa fa-phone" style="font-size:14px ;margin-right:8px"></i> PHONE<br />
-    <p>+82.10.4112.4823</p> <br />
-    <i class="fa fa-github" style="font-size:14px ;margin-right:8px"></i> GITHUB<br />
+    <i class="fa fa-blog" style="font-size:14px ;margin-right:8px"></i> BLOG<br />
+    <p style="cursor:pointer" onclick="blog()">https://jeong92.tistory.com</p><br />
+    <i class="fab fa-github" style="font-size:14px ;margin-right:8px"></i> GITHUB<br />
     <p style="cursor:pointer" onclick="github()">https://github.com/jeonghyunseok</p>
   </span>
 </div>
@@ -115,8 +115,6 @@
     </div>
 
     </div>
-
-
 
     <!-- 배너 텍스트&& 버튼 -->
     <div id="bgText" class="bg-text">
@@ -393,6 +391,10 @@
     //GO GITHUB
     function github(){
       window.open('https://github.com/jeonghyunseok','_blank');
+    }
+    //GO BLOG
+    function blog(){
+      window.open('https://jeong92.tistory.com','_blank');
     }
     </script>
 </html>
