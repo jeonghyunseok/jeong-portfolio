@@ -3,10 +3,7 @@ import React, { Component } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from "axios";
-const headers = {
-  'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-  'Accept': '*/*'
-}
+
 axios.defaults.headers.post = null
 class Main extends React.Component {
   constructor(props) {
@@ -21,7 +18,6 @@ class Main extends React.Component {
   }
 
   // 로딩 스피너
-
 
   // 이메일 보내기
   fnSend(e) {
@@ -59,9 +55,11 @@ class Main extends React.Component {
       swal({ title: '전화번호에 숫자만 입력해 주세요', icon: "info" })
       return false;
     }
-    axios.get(`/mail?name=`+name+'&email='+email+'&phone='+phone+'&message='+message).then(function (data) {
-      swal({ title: '이메일 전송에 성공 했습니다', icon: "success" })
-        .then((value) => { location.reload(); })
+    
+    axios.get(`/mail?name=`+name+'&email='+email+'&phone='+phone+'&message='+message)
+    .then((res)=>{
+      console.log('mail:::',res)
+      swal({ title: '이메일 전송에 성공 했습니다', icon: "success" }).then((value) => { location.reload(); })
     })
       .catch(function (error) {
         console.log(error);
@@ -129,9 +127,6 @@ class Main extends React.Component {
       }
     }
   }
-
-
-
 
   componentDidMount() {
     // 로딩 스피너
@@ -203,10 +198,6 @@ class Main extends React.Component {
     }
 
     filterSelection("all")
-
-
-
-
 
     // Add active class to the current button (highlight it)
     var btnContainer = document.getElementById("myBtnContainer");

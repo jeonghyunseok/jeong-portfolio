@@ -11,7 +11,7 @@ router.get("/", function (req, res) {
 });
 
 //이메일 보내기
-router.get("/mail", (req)=>{
+router.get("/mail", (req,res)=>{
 // 이메일
 var nodemailer = require('nodemailer');
 
@@ -32,6 +32,7 @@ var transporter = nodemailer.createTransport({
           +'<h2>PHONE: '+req.query.phone+'</h2>'
           +'<h2>MESSAGE: '+req.query.message+'</h2>'
   };    
+
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
