@@ -226,12 +226,8 @@ class Main extends React.Component {
 
 
   render() {
-
-
-
-
-
     <meta charSet="utf-8" />;
+    <meta property="og:image" content="http://www.whaleteacher.com/images/about.jpg"></meta>
     require("es6-promise").polyfill();
     require("../../css/main.css");
 
