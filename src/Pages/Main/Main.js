@@ -55,7 +55,7 @@ class Main extends React.Component {
       swal({ title: '전화번호에 숫자만 입력해 주세요', icon: "info" })
       return false;
     }
-    
+
     axios.get(`/mail?name=`+name+'&email='+email+'&phone='+phone+'&message='+message)
     .then((res)=>{
       console.log('mail:::',res)
@@ -237,17 +237,17 @@ class Main extends React.Component {
                 <br />
               </div>
               <ul class="about-ul">
+                <li class="about-li" data-aos="zoom-in">Jeong</li>
                 <li class="about-li" data-aos="zoom-in">1992</li>
-                <li class="about-li" data-aos="zoom-in">JEONG</li>
-                <li class="about-li" data-aos="zoom-in">DEVELOPER</li>
+                <li class="about-li" data-aos="zoom-in">Developer</li>
                 <br />
-                <li class="about-li" data-aos="zoom-in">Web Site</li>
+                <li class="about-li" data-aos="zoom-in">JavaScript</li> 
+                <li class="about-li" data-aos="zoom-in">Vue</li>
+                <li class="about-li" data-aos="zoom-in">React</li>
+                <br />
                 <li class="about-li" data-aos="zoom-in">FrontEnd</li>
-                <li class="about-li" data-aos="zoom-in">JavaScript</li>
-                <br />
                 <li class="about-li" data-aos="zoom-in">AWS</li>
-                <li class="about-li" data-aos="zoom-in">WEB SERVER</li>
-                <li class="about-li" data-aos="zoom-in">ETC</li>
+                <li class="about-li" data-aos="zoom-in">Git</li>
                 <br />
               </ul>
               <div class="about-slogan-second">
@@ -259,13 +259,6 @@ class Main extends React.Component {
             </div>
           </div>
         </div>
-        
-        <p id="about"></p>
-        <div class="cate-cont about">
-        <div class="row about-row"></div>
-        <div class="cont-title-about">CAREERS</div>
-        </div>
-        
         <p id="work"></p>
         <div class="cate-cont works">
           <div class="cont-title">WORKS</div>
@@ -278,7 +271,6 @@ class Main extends React.Component {
 
           </div>
           <div class="container" data-aos='fade-up'>
-
 
             <div class="filterDiv asp port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
               <div class="hovereffect">
@@ -305,7 +297,6 @@ class Main extends React.Component {
                 </div>
               </div>
             </div>
-
 
           </div>
         </div>
