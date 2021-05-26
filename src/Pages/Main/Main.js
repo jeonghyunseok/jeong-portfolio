@@ -197,7 +197,7 @@ class Main extends React.Component {
 
     filterSelection("all")
 
-    // Add active class to the current button (highlight it)
+    // Add active className to the current button (highlight it)
     var btnContainer = document.getElementById("myBtnContainer");
     var btns = btnContainer.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {
@@ -217,74 +217,74 @@ class Main extends React.Component {
 
     return (
 
-      <div class="page-conts">
+      <div className="page-conts">
         <p id="about"></p>
-        <div class="cate-cont about">
-          <div class="row about-row">
-            <div class="cont-title-about">ABOUT</div>
-            <hr class="cont-about-hr" />
-            <div class="col-md-6 about-cont about-cont-first">
-              <div class="about-img" />
+        <div className="cate-cont about">
+          <div className="row about-row">
+            <div className="cont-title-about">ABOUT</div>
+            <hr className="cont-about-hr" />
+            <div className="col-md-6 about-cont about-cont-first">
+              <div className="about-img" />
             </div>
-            <div class="col-md-6 about-cont about-cont-second">
-              <div class="cont-title-keyword">KEYWORD</div>
-              <div class="about-slogan-second">
+            <div className="col-md-6 about-cont about-cont-second">
+              <div className="cont-title-keyword">KEYWORD</div>
+              <div className="about-slogan-second">
                 미래를 예측하는 가장 확실한 방법은, 미래를 만드는 것이라고 생각합니다.
                 <br />더 나은 미래를 만들어 나가는 개발자 정현석 입니다.
                 <br />
               </div>
-              <ul class="about-ul">
-                <li class="about-li" data-aos="zoom-in">Jeong</li>
-                <li class="about-li" data-aos="zoom-in">1992</li>
-                <li class="about-li" data-aos="zoom-in">Developer</li>
+              <ul className="about-ul">
+                <li className="about-li" data-aos="zoom-in">Jeong</li>
+                <li className="about-li" data-aos="zoom-in">1992</li>
+                <li className="about-li" data-aos="zoom-in">Developer</li>
                 <br />
-                <li class="about-li" data-aos="zoom-in">JavaScript</li> 
-                <li class="about-li" data-aos="zoom-in">Vue</li>
-                <li class="about-li" data-aos="zoom-in">React</li>
+                <li className="about-li" data-aos="zoom-in">JavaScript</li> 
+                <li className="about-li" data-aos="zoom-in">Vue</li>
+                <li className="about-li" data-aos="zoom-in">React</li>
                 <br />
-                <li class="about-li" data-aos="zoom-in">FrontEnd</li>
-                <li class="about-li" data-aos="zoom-in">AWS</li>
-                <li class="about-li" data-aos="zoom-in">Git</li>
+                <li className="about-li" data-aos="zoom-in">FrontEnd</li>
+                <li className="about-li" data-aos="zoom-in">AWS</li>
+                <li className="about-li" data-aos="zoom-in">Git</li>
                 <br />
               </ul>
-              <div class="about-slogan-second">
-                <a class="about-slogan-third-a" target="_blank" href="https://github.com/jeonghyunseok"> 
-                <i class="fab fa-github"/> GITHUB : https://github.com/jeonghyunseok</a>
+              <div className="about-slogan-second">
+                <a className="about-slogan-third-a" target="_blank" href="https://github.com/jeonghyunseok"> 
+                <i className="fab fa-github"/> GITHUB : https://github.com/jeonghyunseok</a>
                 <br />
-                <a class="about-slogan-third-a" target="_blank" href="https://jeong92.tistory.com"> 
-                <i class="fa fa-blog"/> BLOG : https://jeong92.tistory.com</a>
+                <a className="about-slogan-third-a" target="_blank" href="https://jeong92.tistory.com"> 
+                <i className="fa fa-blog"/> BLOG : https://jeong92.tistory.com</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
             </div>
           </div>
         </div>
         <p id="career"></p>
-        <div class="cate-cont careers">
-          <div class="cont-title">CAREERS</div>
+        <div className="cate-cont careers">
+          <div className="cont-title">CAREERS</div>
           <hr />
           <br/>
-          <div class="container">
-            <div class="career-content">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="career-image">
+          <div className="container">
+            <div className="career-content">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div className="career-image">
                   <a target="_blank" href="https://www.catch.co.kr/">
-                    <img  class="img-responsive" src="../images/jinhak.jpg" alt="" />
+                    <img  className="img-responsive" src="../images/jinhak.jpg" alt="" />
                   </a>
                 </div>
-                <div class="career-cont">
-                  <div class="career-text-title">(주)진학사 </div>
-                  <div class="career-text-cont">CATCH 개발팀 PD<br/>2019.08-2021.05 (1Y 11M)<br/></div>
+                <div className="career-cont">
+                  <div className="career-text-title">(주)진학사 </div>
+                  <div className="career-text-cont">CATCH 개발팀 PD<br/>2019.08-2021.05 (1Y 11M)<br/></div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                <div class="career-image">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                <div className="career-image">
                   <a target="_blank" href="https://my.vrware.us/">
-                    <img class="img-responsive" src="../images/globepoint.jpg" alt="" />
+                    <img className="img-responsive" src="../images/globepoint.jpg" alt="" />
                   </a>
                 </div>
-                <div class="career-cont">
-                  <div class="career-text-title">(주)글로브포인트</div>
-                  <div class="career-text-cont">R&D 개발사업부<br/>2018.11-2019.11 (1Y 1M)</div>
+                <div className="career-cont">
+                  <div className="career-text-title">(주)글로브포인트</div>
+                  <div className="career-text-cont">R&D 개발사업부<br/>2018.11-2019.11 (1Y 1M)</div>
                 </div>          
               </div>      
             </div>
@@ -292,67 +292,67 @@ class Main extends React.Component {
         </div>
         
         <p id="work"></p>
-        <div class="cate-cont works">
-          <div class="cont-title">WORKS</div>
+        <div className="cate-cont works">
+          <div className="cont-title">WORKS</div>
           <hr />
-          <div id="myBtnContainer" ref="myBtnContainer" class="myBtnContainer" data-aos='fade-up' >
-            <button class="btn active" onClick={() => this.filterSelection("all")}>All</button>
-            {/* <button class="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button> */}
-            <button class="btn" onClick={() => this.filterSelection('vue')}>vue.js</button>
-            <button class="btn" onClick={() => this.filterSelection('node')}>node.js</button>
-            <button class="btn" onClick={() => this.filterSelection('asp')}>ASP.NET</button>
-            <button class="btn" onClick={() => this.filterSelection('js')}>JavaScript</button>
+          <div id="myBtnContainer" ref="myBtnContainer" className="myBtnContainer" data-aos='fade-up' >
+            <button className="btn active" onClick={() => this.filterSelection("all")}>All</button>
+            {/* <button className="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button> */}
+            <button className="btn" onClick={() => this.filterSelection('vue')}>vue.js</button>
+            <button className="btn" onClick={() => this.filterSelection('node')}>node.js</button>
+            <button className="btn" onClick={() => this.filterSelection('asp')}>ASP.NET</button>
+            <button className="btn" onClick={() => this.filterSelection('js')}>JavaScript</button>
 
           </div>
-          <div class="container" data-aos='fade-up'>
+          <div className="container" data-aos='fade-up'>
 
-            <div class="filterDiv vue node js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="../images/catch.png" alt="" />
-                <div class="overlay">
-                  <h2 class="overlay-title">CATCH 채용 사이트</h2>
-                  <h2 class="overlay-skills">Vue.js / Nuxt.js / Node.js / MSSQL / WebApp </h2>
+            <div className="filterDiv vue node js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div className="hovereffect">
+                <img className="img-responsive" src="../images/catch.png" alt="" />
+                <div className="overlay">
+                  <h2 className="overlay-title">CATCH 채용 사이트</h2>
+                  <h2 className="overlay-skills">Vue.js / Nuxt.js / Node.js / MSSQL / WebApp </h2>
                   <p>
-                    <a class="overlay-view" target="_blank" href="http://www.catch.co.kr/">view more > </a>
+                    <a className="overlay-view" target="_blank" href="http://www.catch.co.kr/">view more > </a>
                   </p>
                 </div>
               </div>
             </div>
            
-            <div class="filterDiv vue node js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="../images/catchapply.png" alt="" />
-                <div class="overlay">
-                  <h2 class="overlay-title">CATCHAPPLY 기업채용</h2>
-                  <h2 class="overlay-skills">Vue.js / Nuxt.js / Node.js / PostgerSQL / WebApp </h2>
+            <div className="filterDiv vue node js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div className="hovereffect">
+                <img className="img-responsive" src="../images/catchapply.png" alt="" />
+                <div className="overlay">
+                  <h2 className="overlay-title">CATCHAPPLY 기업채용</h2>
+                  <h2 className="overlay-skills">Vue.js / Nuxt.js / Node.js / PostgerSQL / WebApp </h2>
                   <p>
-                    <a class="overlay-view" target="_blank" href="http://www.catchapply.co.kr/">view more > </a>
+                    <a className="overlay-view" target="_blank" href="http://www.catchapply.co.kr/">view more > </a>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="filterDiv asp port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="../images/dhkorea.png" alt="" />
-                <div class="overlay">
-                  <h2 class="overlay-title">대신출판 고객 서비스 웹</h2>
-                  <h2 class="overlay-skills">C# / ASP.NET / MSSQL / HTML / CSS / Admin Web</h2>
+            <div className="filterDiv asp port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div className="hovereffect">
+                <img className="img-responsive" src="../images/dhkorea.png" alt="" />
+                <div className="overlay">
+                  <h2 className="overlay-title">대신출판 고객 서비스 웹</h2>
+                  <h2 className="overlay-skills">C# / ASP.NET / MSSQL / HTML / CSS / Admin Web</h2>
                   <p>
-                    <a class="overlay-view" target="_blank" href="http://dhkorea.vrware.us/">view more > </a>
+                    <a className="overlay-view" target="_blank" href="http://dhkorea.vrware.us/">view more > </a>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="filterDiv asp js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="../images/arivri.png" alt="" />
-                <div class="overlay">
-                  <h2 class="overlay-title">VRWARE 소개 웹</h2>
-                  <h2 class="overlay-skills"> ASP.NET / HTML / CSS / JS / Responsive / PLANNING</h2>
+            <div className="filterDiv asp js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div className="hovereffect">
+                <img className="img-responsive" src="../images/arivri.png" alt="" />
+                <div className="overlay">
+                  <h2 className="overlay-title">VRWARE 소개 웹</h2>
+                  <h2 className="overlay-skills"> ASP.NET / HTML / CSS / JS / Responsive / PLANNING</h2>
                   <p>
-                    <a class="overlay-view" target="_blank" href="http://play.vrware.us/">view more > </a>
+                    <a className="overlay-view" target="_blank" href="http://play.vrware.us/">view more > </a>
                   </p>
                 </div>
               </div>
@@ -361,34 +361,34 @@ class Main extends React.Component {
           </div>
         </div>
         <p id="contact"></p>
-        <div class="cate-cont contact">
-          <div class="cont-title">CONTACT</div>
+        <div className="cate-cont contact">
+          <div className="cont-title">CONTACT</div>
           <hr />
-          <div class="row about-row">
-            <div class="col-md-6 about-cont  contact-cont-first">
-              <div class="contact-info">
-                <div class="myinfo" style={{ height: "50%" }}>
+          <div className="row about-row">
+            <div className="col-md-6 about-cont  contact-cont-first">
+              <div className="contact-info">
+                <div className="myinfo" style={{ height: "50%" }}>
                   <div style={{ marginLeft: "15px", fontSize: "30px" }}>My Info</div>
-                  <div class="info-text"><i class="fa fa-address-book-o"></i> NAME : JEONG HYUN SEOK</div>
-                  <div class="info-text"><i class="fa fa-envelope"></i> EMAIL : jhs92043@gmail.com</div>
-                  <div class="info-text"> <i class="fa fa-phone"></i>  PHONE : +82.10.4112.4823</div>
-                  <div class="info-text"> <i class='fa fa-map-marker'></i> ADDRESS</div>
+                  <div className="info-text"><i className="fa fa-address-book-o"></i> NAME : JEONG HYUN SEOK</div>
+                  <div className="info-text"><i className="fa fa-envelope"></i> EMAIL : jhs92043@gmail.com</div>
+                  <div className="info-text"> <i className="fa fa-phone"></i>  PHONE : +82.10.4112.4823</div>
+                  <div className="info-text"> <i className='fa fa-map-marker'></i> ADDRESS</div>
                 </div>
                 {/* 지도 */}
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.3431152467338!2d127.06827661531096!3d37.54697917980157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4c49bb7f301%3A0xb97bc60a5ff5f23a!2z7ISc7Jq47Yq567OE7IucIOq0keynhOq1rCDtmZTslpHrj5kg6rWw7J6Q66GcIDQ0LTE!5e0!3m2!1sko!2skr!4v1621790578097!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowFullScreen="" loading="lazy"
                   style={{ border: "0", width: "95%", height: "50%", frameborder: "0", textAlign: "center", margin: "2.5%", marginTop: "-10px" }} allowFullScreen></iframe>
               </div>
             </div>
-            <div class="col-md-6 about-cont contact-cont-second">
+            <div className="col-md-6 about-cont contact-cont-second">
 
-              <div class="contact-mail">
-                <div class="send-mail" style={{ height: "50%" }}>
+              <div className="contact-mail">
+                <div className="send-mail" style={{ height: "50%" }}>
                   <div style={{ marginLeft: "15px", fontSize: "30px" }}>SEND</div>
-                  <input class="send-input" placeholder="NAME" ref="name"></input>
-                  <input class="send-input" placeholder="E-MAIL" ref="email"></input>
-                  <input class="send-input" placeholder="PHONE" ref="phone"></input>
-                  <textarea class="send-input" style={{ background: "none", height: "70%" }} ref="message"></textarea>
-                  <button class="send-button" onClick={this.fnSend} >SEND</button>
+                  <input className="send-input" placeholder="NAME" ref="name"></input>
+                  <input className="send-input" placeholder="E-MAIL" ref="email"></input>
+                  <input className="send-input" placeholder="PHONE" ref="phone"></input>
+                  <textarea className="send-input" style={{ background: "none", height: "70%" }} ref="message"></textarea>
+                  <button className="send-button" onClick={this.fnSend} >SEND</button>
                 </div>
               </div>
             </div>
