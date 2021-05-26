@@ -1,5 +1,5 @@
-# jeong-portfolio
 # 정현석 포트폴리오 사이트
+## http://www.whaleteacher.com/
 
 ### 🌭 Education
 ### 고려대학교(세종) (2011.03 - 2017.02)
