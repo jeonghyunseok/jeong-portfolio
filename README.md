@@ -20,4 +20,4 @@
 
 ### 🍟SKILL
 
-### JAVASCRIPT, HTML, CSS, VUE.JS, REACT.JS, NODE.JS, AWS, PUTTY, GIT
+### <span style="color:green">JAVASCRIPT, HTML, CSS, VUE.JS, REACT.JS, NODE.JS, AWS, PUTTY, GIT</span>
