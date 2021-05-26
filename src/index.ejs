@@ -163,10 +163,8 @@
 <script>
   var filter = "win16|win32|win64|mac";
   //모바일 확인
-  console.log(navigator.platform)
   if (navigator.platform) {
     if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
-      console.log("Now Mobile");
       // 좌측 네비바 열기
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -268,7 +266,6 @@
 
       }
     } else {
-      console.log(" NowPC");
       // 좌측 네비바 열기
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";

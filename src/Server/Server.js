@@ -23,13 +23,11 @@ app.use(cookieParser());
 
 // db.once("open", function() {
 // // CONNECTED TO MONGODB SERVER
-//   console.log("Connected to mongod server");
 // });
  
 // mongoose.connect("mongodb://globepoint:globep0int@13.209.73.222:25015/admin", { dbName: 'vrware_storymaker' });
 // mongoose.connect("mongodb://member:globep0int@13.125.140.13:25015/admin", { dbName: 'vrware_member' });
 
-console.log(mongoose.connection.readyState);
 
 // [CONFIGURE ROUTER]
 

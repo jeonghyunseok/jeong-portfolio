@@ -58,7 +58,6 @@ class Main extends React.Component {
 
     axios.get(`/mail?name=`+name+'&email='+email+'&phone='+phone+'&message='+message)
     .then((res)=>{
-      console.log('mail:::',res)
       swal({ title: '이메일 전송에 성공 했습니다', icon: "success" }).then((value) => { location.reload(); })
     })
       .catch(function (error) {
@@ -91,7 +90,6 @@ class Main extends React.Component {
 
 
   filterSelection(c) {
-    console.log('in');
     var x, i;
     x = document.getElementsByClassName("filterDiv");
 
@@ -377,8 +375,8 @@ class Main extends React.Component {
                   <div class="info-text"> <i class='fa fa-map-marker'></i> ADDRESS</div>
                 </div>
                 {/* 지도 */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.3431152467338!2d127.06827661531096!3d37.54697917980157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4c49bb7f301%3A0xb97bc60a5ff5f23a!2z7ISc7Jq47Yq567OE7IucIOq0keynhOq1rCDtmZTslpHrj5kg6rWw7J6Q66GcIDQ0LTE!5e0!3m2!1sko!2skr!4v1621790578097!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  style={{ border: "0", width: "95%", height: "50%", frameborder: "0", textAlign: "center", margin: "2.5%", marginTop: "-10px" }} allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.3431152467338!2d127.06827661531096!3d37.54697917980157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4c49bb7f301%3A0xb97bc60a5ff5f23a!2z7ISc7Jq47Yq567OE7IucIOq0keynhOq1rCDtmZTslpHrj5kg6rWw7J6Q66GcIDQ0LTE!5e0!3m2!1sko!2skr!4v1621790578097!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowFullScreen="" loading="lazy"
+                  style={{ border: "0", width: "95%", height: "50%", frameborder: "0", textAlign: "center", margin: "2.5%", marginTop: "-10px" }} allowFullScreen></iframe>
               </div>
             </div>
             <div class="col-md-6 about-cont contact-cont-second">

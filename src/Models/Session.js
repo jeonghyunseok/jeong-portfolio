@@ -5,8 +5,6 @@ var mongoose = require('mongoose');
 // var memberdb = mongoose.createConnection("mongodb://member:globep0int@13.125.140.13:25015/admin",{ dbName: 'vrware_member'});
 var Schema = mongoose.Schema;
 
-console.log('pass session schema');
-
 var sessionSchema = new Schema({
    _id: String,
    session: String,

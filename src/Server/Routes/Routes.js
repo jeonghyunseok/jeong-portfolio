@@ -6,7 +6,6 @@ var router = express.Router();
 
 
 router.get("/", function (req, res) {
-    console.log(req.cookies.jeong_sid)
     res.render("index");
 });
 

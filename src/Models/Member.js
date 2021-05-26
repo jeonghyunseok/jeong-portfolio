@@ -6,7 +6,6 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-console.log('pass member schema');
 var memberSchema = new Schema({
     id : String,
     email: String,
