@@ -299,12 +299,40 @@ class Main extends React.Component {
           <hr />
           <div id="myBtnContainer" ref="myBtnContainer" class="myBtnContainer" data-aos='fade-up' >
             <button class="btn active" onClick={() => this.filterSelection("all")}>All</button>
-            <button class="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button>
+            {/* <button class="btn" onClick={() => this.filterSelection('my')}> MY PROJECT</button> */}
+            <button class="btn" onClick={() => this.filterSelection('vue')}>vue.js</button>
+            <button class="btn" onClick={() => this.filterSelection('node')}>node.js</button>
             <button class="btn" onClick={() => this.filterSelection('asp')}>ASP.NET</button>
             <button class="btn" onClick={() => this.filterSelection('js')}>JavaScript</button>
 
           </div>
           <div class="container" data-aos='fade-up'>
+
+            <div class="filterDiv vue node js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../images/catch.png" alt="" />
+                <div class="overlay">
+                  <h2 class="overlay-title">CATCH 채용 사이트</h2>
+                  <h2 class="overlay-skills">Vue.js / Nuxt.js / Node.js / MSSQL / WebApp </h2>
+                  <p>
+                    <a class="overlay-view" target="_blank" href="http://www.catch.co.kr/">view more > </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+            <div class="filterDiv vue node js port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../images/catchapply.png" alt="" />
+                <div class="overlay">
+                  <h2 class="overlay-title">CATCHAPPLY 기업채용</h2>
+                  <h2 class="overlay-skills">Vue.js / Nuxt.js / Node.js / PostgerSQL / WebApp </h2>
+                  <p>
+                    <a class="overlay-view" target="_blank" href="http://www.catchapply.co.kr/">view more > </a>
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div class="filterDiv asp port-cont-div col-lg-4 col-md-4 col-sm-6 col-xs-12">
               <div class="hovereffect">
