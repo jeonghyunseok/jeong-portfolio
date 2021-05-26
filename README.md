@@ -1,6 +1,14 @@
 # jeong-portfolio
-# 🍕정현석 포트폴리오 사이트
-### 🍔Career
+# 🍕 정현석 포트폴리오 사이트
+
+### 🌭 Education
+### 🧈 고려대학교(세종) (2011.03 - 2017.02)
+##### 경영학부
+
+### 🧈 비트캠프 (2017.06 - 2017.11)
+##### Server side를 연동한 Hybrid 웹 앱 응용 SW 엔지니어링 과정 (JAVA, SPRING)
+
+### 🍔 Career
 ### 🥨 진학사 (2019.8 -2021.5)
 ##### 채용공고 페이지/기업회원 페이지 개발
 1. Vue.js, Nuxt.js, node.js 를 활용한 프론트엔드, 백엔드 개발
@@ -18,6 +26,7 @@
 6. 기업용 홍보/쇼핑물 웹 사이트(웹 기획, 웹 디자인, 퍼블리싱, 서버 구축, 유지보수 등) 개발
 7. 신기술 도입 제안서 작성
 
-### 🍟SKILL
+### 🍟 SKILL
+### JAVASCRIPT, HTML, CSS, VUE.JS, REACT.JS, NODE.JS, AWS, PUTTY, GIT
 
-### <span style="color:green">JAVASCRIPT, HTML, CSS, VUE.JS, REACT.JS, NODE.JS, AWS, PUTTY, GIT</span>
+
