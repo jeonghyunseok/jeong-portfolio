@@ -114,8 +114,27 @@
 	user-select: none;          /* Likely future */
 
 }
+.career-content{
+  width: 90%;
+}
 
-
+.career-image{
+  width: 40%;
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+}
+.career-cont{
+  width: 60%;
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  text-align: left;
+}
 
 .about-row{
   margin-bottom: 50px;
@@ -137,7 +156,23 @@
   margin-left: 4%;
   font-family: 'Godo';
   display: block !important;
-} 
+}
+.career-text-title{
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  font-family: 'Godo';
+  display: block !important;
+}
+.career-text-cont{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  font-family: 'Godo';
+  display: block !important;
+}
 .cont-title-about{
   text-align: center;
   padding-top: 100px;
@@ -474,6 +509,24 @@ margin-top: 10px;
     font-family: 'Godo';
     display: block !important;
   } 
+    
+  .career-text-title{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-family: 'Godo';
+    display: block !important;
+  }
+    
+  .career-text-cont{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-family: 'Godo';
+    display: block !important;
+  }
 }
 
 /* IE10+ */

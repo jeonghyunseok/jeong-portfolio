@@ -250,14 +250,49 @@ class Main extends React.Component {
                 <br />
               </ul>
               <div class="about-slogan-second">
-                <a class="about-slogan-third-a" href="https://github.com/jeonghyunseok">GITHUB : https://github.com/jeonghyunseok</a>
-                <br /><a class="about-slogan-third-a" href="https://jeong92.tistory.com">BLOG : https://jeong92.tistory.com</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="about-slogan-third-a" target="_blank" href="https://github.com/jeonghyunseok"> 
+                <i class="fa fa-github"> GITHUB : https://github.com/jeonghyunseok</i></a>
+                <br />
+                <a class="about-slogan-third-a" target="_blank" href="https://jeong92.tistory.com"> 
+                <i class="fa fa-blog"/> BLOG : https://jeong92.tistory.com</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
             </div>
           </div>
         </div>
+        <p id="career"></p>
+        <div class="cate-cont careers">
+          <div class="cont-title">CAREERS</div>
+          <hr />
+          <br/>
+          <div class="container">
+            <div class="career-content">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="career-image">
+                  <a target="_blank" href="https://www.catch.co.kr/">
+                    <img  class="img-responsive" src="../images/jinhak.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="career-cont">
+                  <div class="career-text-title">(주)진학사 </div>
+                  <div class="career-text-cont">CATCH 개발팀 PD<br/>2019.08-2021.05 (1Y 11M)<br/></div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                <div class="career-image">
+                  <a target="_blank" href="https://my.vrware.us/">
+                    <img class="img-responsive" src="../images/globepoint.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="career-cont">
+                  <div class="career-text-title">(주)글로브포인트</div>
+                  <div class="career-text-cont">R&D 개발사업부<br/>2018.11-2019.11 (1Y 1M)</div>
+                </div>          
+              </div>      
+            </div>
+          </div>
+        </div>
+        
         <p id="work"></p>
         <div class="cate-cont works">
           <div class="cont-title">WORKS</div>
