@@ -251,11 +251,11 @@ class Main extends React.Component {
               </ul>
               <div class="about-slogan-second">
                 <a class="about-slogan-third-a" target="_blank" href="https://github.com/jeonghyunseok"> 
-                <i class="fa fa-github"> GITHUB : https://github.com/jeonghyunseok</i></a>
+                <i class="fab fa-github"/> GITHUB : https://github.com/jeonghyunseok</a>
                 <br />
                 <a class="about-slogan-third-a" target="_blank" href="https://jeong92.tistory.com"> 
                 <i class="fa fa-blog"/> BLOG : https://jeong92.tistory.com</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
             </div>
           </div>
