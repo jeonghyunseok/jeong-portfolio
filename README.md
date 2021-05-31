@@ -2,7 +2,6 @@
 ## http://www.whaleteacher.com/
 ## https://jeong92.tistory.com/
 
-
 ### 🌭 Education
 ### 고려대학교(세종) (2011.03 - 2017.02)
 ##### 경영학부
