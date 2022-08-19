@@ -422,10 +422,6 @@ class Main extends React.Component {
                   className="img-responsive"
                   src="../images/dry.png"
                   alt=""
-                  style={{
-                    width: "600px",
-                    height: "255px",
-                  }}
                 />
                 <div className="overlay">
                   <h2 className="overlay-title">새탁 O2O 웹앱 매일새옷</h2>
