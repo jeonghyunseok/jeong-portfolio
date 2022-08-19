@@ -2,12 +2,6 @@
 ## http://www.whaleteacher.com/
 ## https://jeong92.tistory.com/
 
-### 🌭 Education
-### 고려대학교(세종) (2011.03 - 2017.02)
-##### 경영학부
-### 비트캠프 (2017.06 - 2017.11)
-##### Server side를 연동한 Hybrid 웹 앱 응용 SW 엔지니어링 과정 (JAVA, SPRING)
-
 ### 🍔 Career
 ### 온디맨드랩 (2021.10 -2022.8)
 ##### 매일새옷 웹 개발( 세탁 O2O 서비스)
@@ -32,6 +26,12 @@
 5. 개발 요구 사항, 설계 정의, 시험 명세서, 개발 일정 등 개발자 문서 작성
 6. 기업용 홍보/쇼핑물 웹 사이트(웹 기획, 웹 디자인, 퍼블리싱, 서버 구축, 유지보수 등) 개발
 7. 신기술 도입 제안서 작성
+
+### 🌭 Education
+### 고려대학교(세종) (2011.03 - 2017.02)
+##### 경영학부
+### 비트캠프 (2017.06 - 2017.11)
+##### Server side를 연동한 Hybrid 웹 앱 응용 SW 엔지니어링 과정 (JAVA, SPRING)
 
 ### 🍟 SKILL
 ### JAVASCRIPT, HTML, CSS, VUE.JS, NUXT.JS, REACT.JS, NODE.JS, AWS, PUTTY, GIT
