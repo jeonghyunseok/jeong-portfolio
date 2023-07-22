@@ -1,4 +1,4 @@
-# 정현석 포트폴리오 사이트
+# 정현석 포트폴리오
 
 ## https://jeong92.tistory.com/
 
