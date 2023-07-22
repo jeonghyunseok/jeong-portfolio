@@ -1,7 +1,5 @@
 # 정현석 포트폴리오 사이트
 
-## http://www.whaleteacher.com/
-
 ## https://jeong92.tistory.com/
 
 ### 🍔 Career
